@@ -1,0 +1,8 @@
+[elecV2P rules]
+url,adtest,block,reject,req
+url,adtest/(get|post),block,tinyimg,req
+host,httpbin.org,js,0json.js,res
+url,httpbin.org/get,hold,0,res
+resstatus,404,js,0body.js,res
+host,host.com,ua,iPhone,res
+url,httpbin.org/html,js,exam-cheerio-hbin.js,res

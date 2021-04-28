@@ -1,0 +1,2 @@
+[elecV2P rewrite.list]
+^https?:\/\/httpbin\.org/get\?body https://raw.githubusercontent.com/elecV2/elecV2P/master/runjs/JSFile/0body.js
