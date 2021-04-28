@@ -10,7 +10,7 @@ on:
   watch:
     types: started
 jobs:
-  jdbot_pull:
+  elecV2P_pull:
     runs-on: ubuntu-latest
     steps:
       - name: set_time
