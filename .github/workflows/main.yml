@@ -35,7 +35,7 @@ jobs:
           echo "=================="
           cd ..
           echo "# 更新时间⌚️ 
-          > $(date +%Y%m%d %H:%M)" > README.md          
+          > $(date +%Y%m%d-%H:%M)" > README.md          
       - name: Commit files
         run: |
           pwd
