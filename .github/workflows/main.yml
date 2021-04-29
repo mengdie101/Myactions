@@ -26,9 +26,16 @@ jobs:
           cd elecV2P 
           rm -rf .git 
           echo "=================="
+      - name: "clone dust"
+        run: |
+          rm -rf dust
+          git clone https://github.com/monk-coder/dust.git
+          cd dust 
+          rm -rf .git 
+          echo "=================="
           cd ..
           echo "# 更新时间⌚️ 
-          > $(date +%Y%m%d%H%M%S)" > README.md
+          > $(date +%Y%m%d %H:%M)" > README.md          
       - name: Commit files
         run: |
           pwd
@@ -36,7 +43,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "$(date +%Y%m%d%H%M%S)" -a
+          git commit -m "$(date +%Y%m%d %H:%M)" -a
       - name: 'Push changes'
         uses: ad-m/github-push-action@master
         with:
