@@ -30,4 +30,4 @@ jobs:
       env:
         MY_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        python github.py
+        python host/github.py
