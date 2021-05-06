@@ -2,10 +2,9 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
-import shutil
-import os,sys,ctypes
-import datetime
-import platform
+import os
+import requests,json
+from datetime import datetime, timedelta, timezone
 import socket_query
 
 hostLocation = r"host/hosts.txt"
