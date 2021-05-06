@@ -31,4 +31,4 @@ jobs:
         MY_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         pwd
-        python host/github.py
+        python host/socket_query.py
