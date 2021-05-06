@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding:utf-8
- 
+
+import os
 import socket
 from datetime import datetime, timedelta, timezone
 domains = [
@@ -38,11 +39,13 @@ def get_now_date_str(format_string="%Y-%m-%d %H:%M:%S"):#"%Y-%m-%d %H:%M:%S"
     return str_date
 hostLocation = r"host/hosts.txt"
 def output_hosts():
-    with open(hostLocation, "r") as f:
+    with open("temphost", "w") as f:
         f.write('# GitHub Start \n')
         f.write('# Last update at %s (Beijing Time)\n'%(get_now_date_str()))
         for ip, domain in gen_host():
             f.write('%s %s\n'%(ip, domain))
         f.write('# GitHub End \n')
+ os.remove(hostLocation)
+ os.rename("temphost",hostLocation)
 if __name__ == '__main__':
     output_hosts()
