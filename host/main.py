@@ -8,7 +8,7 @@ import datetime
 import platform
 import socket_query
 
-hostLocation = r"hosts"
+hostLocation = r"host/hosts.txt"
 
 def dropDuplication(line):
     flag = False
