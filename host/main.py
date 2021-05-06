@@ -10,25 +10,12 @@ import socket_query
 
 hostLocation = r"host/hosts.txt"
 
-def dropDuplication(line):
-    flag = False
-    if "#*******" in line:
-        return True
-    for site in sites:
-        if site in line:
-            flag = flag or True
-        else:
-            flag = flag or False
-    return flag
-
 # 更新host, 并刷新本地DNS
 def updateHost():
     with open(hostLocation, "r") as f1:
         f1_lines = f1.readlines()
         with open("temphost", "w") as f2:
             for line in f1_lines:                       # 为了防止 host 越写用越长，需要删除之前更新的含有github相关内容
-                if dropDuplication(line) == False:
-                    f2.write(line)
             f2.write("#*********************github " +
                      str(today) + " update********************\n")
             for ip, domain in socket_query.gen_host():
