@@ -38,13 +38,11 @@ def get_now_date_str(format_string="%Y-%m-%d %H:%M:%S"):#"%Y-%m-%d %H:%M:%S"
     return str_date
 
 def output_hosts():
-    with open('hosts.txt', 'w') as f:
-        f.write('```\n')
+    with open('host/hosts.txt', 'w') as f:
         f.write('# GitHub Start \n')
         f.write('# Last update at %s (Beijing Time)\n'%(get_now_date_str()))
         for ip, domain in gen_host():
             f.write('%s %s\n'%(ip, domain))
         f.write('# GitHub End \n')
-        f.write('```\n')
 if __name__ == '__main__':
     output_hosts()
