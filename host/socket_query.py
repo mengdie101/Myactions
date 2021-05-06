@@ -36,7 +36,7 @@ def get_now_date_str(format_string="%Y-%m-%d %H:%M:%S"):#"%Y-%m-%d %H:%M:%S"
     bj_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
     str_date = bj_dt.strftime(format_string)
     return str_date
-hostLocation = r"hosts"
+hostLocation = r"host/hosts.txt"
 def output_hosts():
     with open(hostLocation, "r") as f:
         f.write('# GitHub Start \n')
