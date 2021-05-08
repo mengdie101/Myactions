@@ -47,8 +47,8 @@ jobs:
           pip install requests==2.22.0       
       - name: Update host
         run: |
-          python host/socket_query.py
-          mv hosts.txt host/hosts.txt
+          python web/socket_query.py
+          mv hosts.txt web/hosts.txt
           
       - name: Commit files
         run: |
