@@ -32,15 +32,10 @@ jobs:
       run: |
         python host/socket_query.py
         
-    - name: Commit files
-      run: |
-        pwd
-        ls
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .
-        git commit -m "update" -a
-    - name: 'Push changes'
-      uses: ad-m/github-push-action@master
+    - name: Push to built branch
+      uses: Automattic/action-commit-to-branch@master
       with:
-        github_token: ${{ secrets.TOKEN }}
+        branch: 'master'
+        commit_message: 'Update Host'
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
