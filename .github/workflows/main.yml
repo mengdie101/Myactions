@@ -48,7 +48,7 @@ jobs:
       - name: Update host
         run: |
           python host/socket_query.py
-          mv -rf hosts.txt host/hosts.txt
+          mv hosts.txt host/hosts.txt
           
       - name: Commit files
         run: |
