@@ -49,9 +49,9 @@ jobs:
         
       - name: Update Host
         run: |
-          cd host
-          python socket_query.py
-
+          python host/socket_query.py
+          mv hosts.txt host/hosts.txt
+          
       - name: Commit files
         run: |
           pwd
