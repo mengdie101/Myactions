@@ -10,7 +10,7 @@ on:
   watch:
     types: started
 jobs:
-  GitHub Actions:
+  GitHub_Actions:
     runs-on: ubuntu-latest
     steps:
       - name: set_time
