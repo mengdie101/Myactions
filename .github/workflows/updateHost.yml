@@ -30,5 +30,4 @@ jobs:
       env:
         MY_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        pwd
         python host/socket_query.py
