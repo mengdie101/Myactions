@@ -47,10 +47,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests==2.22.0
         
-      - name: Update Host
+      - name: Run tasks
         run: |
           python host/socket_query.py
-          
+
       - name: Commit files
         run: |
           pwd
