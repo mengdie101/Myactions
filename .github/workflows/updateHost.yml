@@ -28,19 +28,6 @@ jobs:
         
     - name: Run tasks
       env:
-        MY_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        MY_GITHUB_TOKEN: ${{ secrets.TOKEN }}
       run: |
         python host/socket_query.py
-        
-    - name: Commit files
-      run: |
-        pwd
-        ls
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add .
-        git commit -m "Update Host" -a
-    - name: 'Push changes'
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.TOKEN }}
