@@ -26,13 +26,6 @@ jobs:
           cd elecV2P 
           rm -rf .git 
           echo "=================="
-      - name: "clone dust"
-        run: |
-          rm -rf dust
-          git clone https://github.com/monk-coder/dust.git
-          cd dust 
-          rm -rf .git 
-          echo "=================="
           cd ..
           echo "# 更新时间⌚️ 
           > $(date +%Y%m%d-%H:%M)" > README.md
