@@ -20,11 +20,16 @@ module.exports = app => {
     res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' })
     res.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">')
     if (sType(logs) === 'array') {
-      res.write(`<title>elecV2P LOGS - ${logs.length}</title><style>body{display: flex;flex-wrap: wrap;justify-content: space-between;}.item{height: fit-content;text-decoration: none;border-radius: 10px;padding: 8px 12px;margin: 4px 8px;background: #1890ff;color: white;font-size: 18px;font-family: 'Microsoft YaHei', -apple-system, Arial;}</style>`)
+      res.write(`<title>elecV2P LOGS - ${logs.length}</title><style>.logs{padding: 0;margin: 0;display: flex;flex-wrap: wrap;justify-content: space-between;}.logs_item {height: 40px;display: inline-flex;align-items: center;line-height: 40px;list-style: none;border-radius: 10px;padding: 0 0 0 15px;margin: 4px 8px;background: #1890ff;color: white;font-size: 18px;font-family: 'Microsoft YaHei', -apple-system, Arial;}.logs_a {color: white;text-decoration: none;}.logs_delete {width: 15px;text-align: center;cursor: pointer;opacity: 0;border-radius: 0 10px 10px 0;background-color: red;}.logs_delete:hover{opacity: 1;}</style>`)
       if (logs.length === 0) {
-        res.write('<div class="item">暂无 LOGS 日志</div>')
+        res.write('<div class="logs_item"><span>暂无 LOGS 日志</span><span class="logs_delete"></span></div>')
       } else {
-        logs.forEach(log=>res.write(`<a class='item' href="/logs/${filename !== 'all' ? (filename + '/') : ''}${log}" target="_blank">${log}</a>`))
+        res.write('<ul class="logs">')
+        logs.forEach(log=>{
+          let rflog = `${filename !== 'all' ? (filename + '/') : ''}${log}`
+          res.write(`<li class='logs_item'><a class='logs_a' href="/logs/${rflog}" target="_blank">${log}</a><span class='logs_delete' data-name='${rflog}'>x</span></li>`)
+        })
+        res.write(`</ul><script type='text/javascript'>document.querySelector(".logs").addEventListener("click",t=>{let n=t.target.dataset.name;n&&confirm("确定删除日志 "+n+"？（不可恢复）")&&fetch("/logs",{method:"delete",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:n})}).then(e=>e.json()).then(e=>{0===e.rescode?t.target.parentElement.remove():alert(e.message||e)}).catch(e=>{alert(n+" 删除失败 "+e.message),console.log(e)})});</script>`)
       }
       res.end()
     } else {
