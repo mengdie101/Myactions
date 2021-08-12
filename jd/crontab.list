@@ -48,7 +48,7 @@
 0 0 * * * jtask jd_car
 #59 23 * * * sleep 59; jtask jd_car_exchange conc
 10 */4 * * * jtask jd_cash
-0 0* * * jtask jd_cash_exchange_cdle
+0 0 * * * jtask jd_cash_exchange_cdle
 38 1-22/2 * * * jtask jd_cfd
 6 0,23 * * * jtask jd_club_lottery
 20 * * * * jtask jd_dreamFactory
