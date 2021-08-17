@@ -28,7 +28,7 @@ jobs:
         cp -f ./JDHelloWorld/package.json ./
         cp -f ./JDHelloWorld/sendNotify.js ./
         cp -f ./JDHelloWorld/jdCookie.js ./
-        #cp -f ./JDHelloWorld/*ShareCodes.js ./
+        cp -f ./JDHelloWorld/*ShareCodes.js ./
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cd ./JDHelloWorld
         rm -rf *_*.js
