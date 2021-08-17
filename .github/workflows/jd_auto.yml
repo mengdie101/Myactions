@@ -21,9 +21,9 @@ jobs:
     - name: down
       run: |
         cd ./auto
+        rm -rf *
         echo "========= 开始下载JDHelloWorld的脚本 ========="
         git clone https://github.com/JDHelloWorld/jd_scripts.git ./JDHelloWorld
-        mv ./JDHelloWorld/githubAction.md ./githubAction.md
         echo "========= 开始复制依赖 ========="
         cp -f ./JDHelloWorld/package.json ./
         cp -f ./JDHelloWorld/sendNotify.js ./
@@ -31,16 +31,17 @@ jobs:
         cp -f ./JDHelloWorld/*ShareCodes.js ./
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cd ./JDHelloWorld
-        rm -rf ./*_*.js
+        rm -rf *_*.js
         sudo npm install
         tsc *_*.ts
         cd ./tools
         tsc *_*.ts
         echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
-        mv -f ./JDHelloWorld/tools/*_*.ts ./ts/
-        cp -f ./JDHelloWorld/*_*.js ./
+        mkdir ts
+        cp -f ./JDHelloWorld/tools/*_*.ts ./ts/
         cp -f ./JDHelloWorld/*_*.ts ./ts/
+        cp -f ./JDHelloWorld/*_*.js ./
         rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
