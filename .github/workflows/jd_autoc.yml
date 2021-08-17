@@ -1,0 +1,57 @@
+name: jd_autoc
+on:
+  push:
+    branches: 
+      - master
+  schedule:
+    - cron: 5 */2 * * *
+  workflow_dispatch:
+  watch:
+    types: started
+jobs:
+  build:
+    runs-on: Ubuntu-20.04  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install build dependencies
+      run: |
+        sudo npm install -g typescript
+        sudo apt-get install wget
+        sudo apt install rename
+    - name: down
+      run: |
+        cd ./auto
+        rm -rf *
+        echo "========= 开始下载JDHelloWorld的脚本 ========="
+        git clone https://github.com/JDHelloWorld/jd_scripts.git ./JDHelloWorld
+        echo "========= 开始复制依赖 ========="
+        cp -f ./JDHelloWorld/package.json ./
+        cp -f ./JDHelloWorld/sendNotify.js ./
+        cp -f ./JDHelloWorld/jdCookie.js ./
+        cp -f ./JDHelloWorld/*ShareCodes.js ./
+        echo "========= 开始转换JDHelloWorld的ts脚本 ========="
+        cd ./JDHelloWorld
+        rm -rf *_*.js
+        sudo npm install
+        tsc *_*.ts
+        cd ./tools
+        tsc *_*.ts
+        echo "========= 开始复制JDHelloWorld的脚本 ========="
+        cd ../..
+        mkdir ts
+        cp -f ./JDHelloWorld/tools/*_*.ts ./ts/
+        cp -f ./JDHelloWorld/*_*.ts ./ts/
+        cp -f ./JDHelloWorld/*_*.js ./
+        rm -rf ./JDHelloWorld
+    - name: 'Commit Files'
+      id: commit
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git diff --quiet && git diff --staged --quiet || git commit -am 'update'
+    - name: Push Dust
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.TOKEN }}
+        branch: master
