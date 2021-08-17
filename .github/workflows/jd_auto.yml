@@ -32,8 +32,8 @@ jobs:
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cd ./JDHelloWorld
         sudo npm install
-        cp -f ./JDHelloWorld/tools/*_*.ts ./ts/
-        cp -f ./JDHelloWorld/*_*.ts ./ts/
+        cp -f ./tools/*_*.ts ./ts/
+        cp -f ./*_*.ts ./ts/
         cd ./ts
         tsc *_*.ts
         cd ../..
