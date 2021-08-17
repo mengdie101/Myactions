@@ -27,6 +27,10 @@ jobs:
         git clone https://github.com/JDHelloWorld/jd_scripts.git ./JDHelloWorld
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cp -f ./JDHelloWorld/*_*.ts ./
+        cp -f ./JDHelloWorld/package.json ./
+        cp -f ./JDHelloWorld/sendNotify.js ./
+        cp -f ./JDHelloWorld/jdCookie.js ./
+        cp -f ./JDHelloWorld/*ShareCodes.js ./
         sudo npm install
         tsc *_*.ts
         rm -rf ./JDHelloWorld
