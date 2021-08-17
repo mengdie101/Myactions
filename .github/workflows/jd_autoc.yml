@@ -34,6 +34,7 @@ jobs:
         cp -f ./JDHelloWorld/*ShareCodes.js ./
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cd ./JDHelloWorld
+        rm *_*.js
         sudo npm install
         tsc *_*.ts
         cd ./tools
