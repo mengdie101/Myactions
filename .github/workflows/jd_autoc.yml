@@ -1,4 +1,4 @@
-name: jd_autoc
+name: jd_auto
 on:
   push:
     branches: 
@@ -21,6 +21,9 @@ jobs:
     - name: down
       run: |
         cd ./auto
+        shopt -s extglob
+        rm -rf !(docker|backup|account.json|Loon|QuantumultX|README.md|jd_half_redrain.js|jd_super_redrain.js)
+        shopt -u extglob
         echo "========= 开始下载JDHelloWorld的脚本 ========="
         git clone https://github.com/JDHelloWorld/jd_scripts.git ./JDHelloWorld
         mv ./JDHelloWorld/githubAction.md ./githubAction.md
@@ -37,9 +40,13 @@ jobs:
         tsc *_*.ts
         echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
+        mv -f ./JDHelloWorld/tools/*_*.ts ./backup/ts/
         cp -rf ./JDHelloWorld/tools ./
+        rm -rf ./JDHelloWorld/jd_update.js
+        cp -rf ./JDHelloWorld/backUp/* ./backup/js/
         cp -f ./JDHelloWorld/*_*.js ./
-        cp -f ./JDHelloWorld/*_*.ts ./ts/
+        #cp -f ./JDHelloWorld/*Token.js ./
+        cp -f ./JDHelloWorld/*_*.ts ./backup/ts/
         rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
