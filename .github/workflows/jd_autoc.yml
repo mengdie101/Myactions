@@ -37,7 +37,6 @@ jobs:
         tsc *_*.ts
         echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
-        mkdir ts
         cp -rf ./JDHelloWorld/tools ./
         cp -f ./JDHelloWorld/*_*.js ./
         cp -f ./JDHelloWorld/*_*.ts ./ts/
