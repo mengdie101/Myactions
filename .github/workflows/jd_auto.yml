@@ -37,13 +37,13 @@ jobs:
         tsc *_*.ts
         echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
-        #mv -f ./JDHelloWorld/tools/*_*.ts ./backup/ts/
+        mv -f ./JDHelloWorld/tools/*_*.ts ./backup/ts/
         #cp -rf ./JDHelloWorld/tools ./
         #rm -rf ./JDHelloWorld/jd_update.js
         #cp -rf ./JDHelloWorld/backUp/* ./backup/js/
-        #cp -f ./JDHelloWorld/*_*.js ./
+        cp -f ./JDHelloWorld/*_*.js ./
         #cp -f ./JDHelloWorld/*Token.js ./
-        #cp -f ./JDHelloWorld/*_*.ts ./backup/ts/
+        cp -f ./JDHelloWorld/*_*.ts ./backup/ts/
         rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
