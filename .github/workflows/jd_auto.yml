@@ -22,18 +22,13 @@ jobs:
       run: |
         cd ./auto
         echo "========= 开始清空脚本 ========="
-        shopt -s extglob
-        rm -rf !(docker|backup|account.json|Loon|QuantumultX|README.md|jd_half_redrain.js|jd_super_redrain.js)
-        shopt -u extglob
+        rm -rf *
         echo "========= 开始下载JDHelloWorld的脚本 ========="
         git clone https://github.com/JDHelloWorld/jd_scripts.git ./JDHelloWorld
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
-        cd ./JDHelloWorld
+        cp -f ./JDHelloWorld/*_*.ts ./
         sudo npm install
         tsc *_*.ts
-        cd ./tools
-        tsc *_*.ts
-        cd ..
         rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
