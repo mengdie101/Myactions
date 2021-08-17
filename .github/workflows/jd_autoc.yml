@@ -1,4 +1,4 @@
-name: jd_auto
+name: jd_autoc
 on:
   push:
     branches: 
@@ -21,7 +21,6 @@ jobs:
     - name: down
       run: |
         cd ./auto
-        rm -rf *
         echo "========= 开始下载JDHelloWorld的脚本 ========="
         git clone https://github.com/JDHelloWorld/jd_scripts.git ./JDHelloWorld
         mv ./JDHelloWorld/githubAction.md ./githubAction.md
@@ -32,17 +31,19 @@ jobs:
         cp -f ./JDHelloWorld/*ShareCodes.js ./
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cd ./JDHelloWorld
-        rm -f *_*.js
         sudo npm install
         tsc *_*.ts
         cd ./tools
         tsc *_*.ts
         echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
-        mkdir ts
-        cp -rf ./JDHelloWorld/tools ./
+        mv -f ./JDHelloWorld/tools/*_*.ts ./backup/ts/
+        #cp -rf ./JDHelloWorld/tools ./
+        #rm -rf ./JDHelloWorld/jd_update.js
+        #cp -rf ./JDHelloWorld/backUp/* ./backup/js/
         cp -f ./JDHelloWorld/*_*.js ./
-        cp -f ./JDHelloWorld/*_*.ts ./ts/
+        #cp -f ./JDHelloWorld/*Token.js ./
+        cp -f ./JDHelloWorld/*_*.ts ./backup/ts/
         rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
