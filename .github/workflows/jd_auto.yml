@@ -1,4 +1,4 @@
-name: autowork
+name: jd_auto
 on:
   push:
     branches: 
@@ -27,27 +27,13 @@ jobs:
         shopt -u extglob
         echo "========= 开始下载JDHelloWorld的脚本 ========="
         git clone https://github.com/JDHelloWorld/jd_scripts.git ./JDHelloWorld
-        mv ./JDHelloWorld/githubAction.md ./githubAction.md
-        echo "========= 开始复制依赖 ========="
-        cp -f ./JDHelloWorld/package.json ./
-        cp -f ./JDHelloWorld/sendNotify.js ./
-        cp -f ./JDHelloWorld/jdCookie.js ./
-        cp -f ./JDHelloWorld/*ShareCodes.js ./
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cd ./JDHelloWorld
         sudo npm install
         tsc *_*.ts
         cd ./tools
         tsc *_*.ts
-        echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
-        mv -f ./JDHelloWorld/tools/*_*.ts ./backup/ts/
-        cp -rf ./JDHelloWorld/tools ./
-        rm -rf ./JDHelloWorld/jd_update.js
-        cp -rf ./JDHelloWorld/backUp/* ./backup/js/
-        cp -f ./JDHelloWorld/*_*.js ./
-        #cp -f ./JDHelloWorld/*Token.js ./
-        cp -f ./JDHelloWorld/*_*.ts ./backup/ts/
         rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
