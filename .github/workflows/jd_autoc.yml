@@ -1,4 +1,4 @@
-name: jd_autoc
+name: jd_auto
 on:
   push:
     branches: 
@@ -31,7 +31,7 @@ jobs:
         cp -f ./JDHelloWorld/*ShareCodes.js ./
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
         cd ./JDHelloWorld
-        rm -rf *_*.js
+        rm -f *_*.js
         sudo npm install
         tsc *_*.ts
         cd ./tools
@@ -39,9 +39,9 @@ jobs:
         echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
         mkdir ts
-        cp -f ./JDHelloWorld/tools/*_*.ts ./ts/
-        cp -f ./JDHelloWorld/*_*.ts ./ts/
+        cp -rf ./JDHelloWorld/tools ./
         cp -f ./JDHelloWorld/*_*.js ./
+        cp -f ./JDHelloWorld/*_*.ts ./ts/
         rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
