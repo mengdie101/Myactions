@@ -33,7 +33,7 @@ jobs:
         cd ./JDHelloWorld
         rm -rf *_*.js
         sudo npm install
-        cp -f ./JDHelloWorld/tools/*_*.ts ./
+        cp -f ./tools/*_*.ts ./
         tsc *_*.ts
         echo "========= 开始复制JDHelloWorld的脚本 ========="
         cd ../..
