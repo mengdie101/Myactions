@@ -30,14 +30,12 @@ jobs:
         cp -f ./JDHelloWorld/jdCookie.js ./
         cp -f ./JDHelloWorld/*ShareCodes.js ./
         echo "========= 开始转换JDHelloWorld的ts脚本 ========="
-        cd ./JDHelloWorld
         sudo npm install
-        cp -f ./tools/*_*.ts ./ts/
-        cp -f ./*_*.ts ./ts/
+        cp -f ./JDHelloWorld/tools/*_*.ts ./ts/
+        cp -f ./JDHelloWorld/*_*.ts ./ts/
+        rm -rf ./JDHelloWorld
         cd ./ts
         tsc *_*.ts
-        cd ../..
-        rm -rf ./JDHelloWorld
     - name: 'Commit Files'
       id: commit
       run: |
