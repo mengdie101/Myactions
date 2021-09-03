@@ -5,7 +5,7 @@ on:
     branches: 
       - master
   schedule:
-   - cron: '33 */6 * * *'
+   - cron: '33 */12 * * *'
   workflow_dispatch:
   watch:
     types: started
@@ -19,17 +19,6 @@ jobs:
           date
       - name: Checkout
         uses: actions/checkout@v2
-      - name: "clone elecV2P"
-        run: |
-          rm -rf elecV2P
-          git clone https://github.com/elecV2/elecV2P.git
-          cd elecV2P 
-          rm -rf .git 
-          echo "=================="
-          cd ..
-          echo "# 更新时间⌚️ 
-          > $(date +%Y%m%d-%H:%M)" > README.md
-          
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
