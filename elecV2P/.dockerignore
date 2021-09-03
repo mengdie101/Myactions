@@ -1,4 +1,0 @@
-.dockerignore
-**/.git
-**/.github
-**/node_modules
