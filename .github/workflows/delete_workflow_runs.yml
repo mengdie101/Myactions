@@ -1,5 +1,7 @@
-name: Delete old workflow runs
+name: Delete_workflow_runs
 on:
+  schedule:
+    - cron: '0 22 * * *'
   workflow_dispatch:
     inputs:
       days:
@@ -9,7 +11,7 @@ on:
       minimum_runs:
         description: 'The minimum runs to keep for each workflow.'
         required: true
-        default: 3
+        default: 6
 
 jobs:
   del_runs:
