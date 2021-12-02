@@ -28,7 +28,12 @@ jobs:
         run: |
           python web/socket_query.py
           mv hosts.txt web/hosts.txt
-          
+          wget -N https://raw.githubusercontent.com/lanceliao/china-holiday-calender/master/holidayCal.ics
+          sed -i "s/。\\\.*放假通知.*/。/g" holidayCal.ics
+          sed -i "s/T090000/T083000/g" holidayCal.ics
+          sed -i "s/T180000/T173000/g" holidayCal.ics
+          sed -i "s/PT60M/PT30M/g" holidayCal.ics
+          mv holidayCal.ics web/holidayCal.ics
       - name: Commit files
         run: |
           pwd
