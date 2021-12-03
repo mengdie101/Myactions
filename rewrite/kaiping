@@ -16,7 +16,7 @@ hostname = cdn.digitalcnzz.com, wallet.95516.com, static.cebbank.com, rs.creditc
 # > 招商银行
 ^https:\/\/s3gw.cmbimg.com\/mbappinitads\/.*.jpg url reject-200
 # > 掌上生活
-^https:\/\/res.cc.cmbimg.com\/fsp\/File\/AdPlatformPublic\/[A-Za-z0-9]+\.jpeg url reject-200
+# ^https:\/\/res.cc.cmbimg.com\/fsp\/File\/AdPlatformPublic\/[A-Za-z0-9]+\.jpeg url reject-200
 # > 邮储银行
 ^https:\/\/static.psbc.com:8090\/mbank_f\/images\/[0-9]+\.png url reject-200
 # > 邮储信用卡
