@@ -54,7 +54,7 @@ const $ = new API("hzh", true);
 const ERR = MYERR();
 $.cookie = $.read("evil_hzhCookie");
 $.usertoken = $.read("evil_hzhUserToken");
-$.useragent = $.read("evil_User-Agent");
+$.useragent = $.read("evil_UserAgent");
 
 !(async () => {
   if (typeof $request != "undefined") {
@@ -210,9 +210,9 @@ function getCookie() {
     const usertoken = $request.headers["User-Token"];
     $.log(usertoken);
     $.write(usertoken, "evil_hzhUserToken");
-    const usertoken = $request.headers["User-Agent"];
+    const useragent = $request.headers["User-Agent"];
     $.log(useragent);
-    $.write(usertoken, "evil_User-Agent");
+    $.write(useragent, "evil_UserAgent");
     $.notify("华住会", "", "获取签到Cookie成功🎉");
   }
 }
