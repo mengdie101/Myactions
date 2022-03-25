@@ -54,6 +54,7 @@ const $ = new API("hzh", true);
 const ERR = MYERR();
 $.cookie = $.read("evil_hzhCookie");
 $.usertoken = $.read("evil_hzhUserToken");
+$.useragent = $.read("evil_User-Agent");
 
 !(async () => {
   if (typeof $request != "undefined") {
@@ -105,7 +106,7 @@ function checkin() {
     "Client-Platform": `APP-IOS`,
     "Content-Type": `application/x-www-form-urlencoded`,
     Origin: `https://campaign.huazhu.com`,
-    "User-Agent": `HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
+    "User-Agent": $.useragent,
     "User-Token": $.usertoken,
     Cookie: $.cookie,
     Host: `hweb-mbf.huazhu.com`,
@@ -143,7 +144,7 @@ function checkinfo() {
     Accept: `application/json, text/plain, */*`,
     "User-Token": $.usertoken,
     Host: `hweb-mbf.huazhu.com`,
-    "User-Agent": `HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
+    "User-Agent": $.useragent,
     Referer: `https://campaign.huazhu.com/points-shop/`,
     "Accept-Language": `zh-cn`,
     "Accept-Encoding": `gzip, deflate, br`,
@@ -209,6 +210,9 @@ function getCookie() {
     const usertoken = $request.headers["User-Token"];
     $.log(usertoken);
     $.write(usertoken, "evil_hzhUserToken");
+    const usertoken = $request.headers["User-Agent"];
+    $.log(useragent);
+    $.write(usertoken, "evil_User-Agent");
     $.notify("华住会", "", "获取签到Cookie成功🎉");
   }
 }
@@ -599,7 +603,7 @@ function API(name = "untitled", debug = false) {
     "Content-Type": `application/x-www-form-urlencoded`,
     fp: $.fp,
     Host: `newactivity.huazhu.com`,
-    "User-Agent": `HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
+    "User-Agent": $.useragent,
     Referer: `https://campaign.huazhu.com/pointsShop/`,
     "Accept-Language": `zh-cn`,
     "Accept-Encoding": `gzip, deflate, br`,
@@ -649,7 +653,7 @@ async function getprize(id) {
     "Content-Type": `application/x-www-form-urlencoded`,
     fp: $.fp,
     Host: `newactivity.huazhu.com`,
-    "User-Agent": `HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
+    "User-Agent": $.useragent,
     Referer: `https://campaign.huazhu.com/pointsShop/`,
     "Accept-Language": `zh-cn`,
     "Accept-Encoding": `gzip, deflate, br`,
@@ -661,7 +665,7 @@ async function getprize(id) {
     Accept: `* /*`,
     Referer: `https://campaign.huazhu.com/`,
     Host: `newactivity.huazhu.com`,
-    "User-Agent": `HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/HUAZHU/ios/iPhone13,2/14.7.1/8.0.70/Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
+    "User-Agent": $.useragent,
     "Accept-Language": `zh-cn`,
     "Accept-Encoding": `gzip, deflate, br`,
     "Access-Control-Request-Method": `GET`,
