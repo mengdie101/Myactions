@@ -1,0 +1,5 @@
+[MitM]
+hostname = hweb-mbf.huazhu.com
+
+[rewrite_local]
+https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/hzh.js
