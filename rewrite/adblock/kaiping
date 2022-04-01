@@ -1,13 +1,38 @@
-hostname = cdn.digitalcnzz.com, wallet.95516.com, static.cebbank.com, rs.creditcard.cmbc.com.cn, mbs.boc.cn, mlife.jf365.boc.cn, creditcard.bankcomm.com, s3gw.cmbimg.com, rs.creditcard.cmbc.com.cn, static.psbc.com, mcc.psbc.com, m.360buyimg.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, img*.360buyimg.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, , wmapi.meituan.com, api.smzdm.com, app-api.smzdm.com, haojia.m.smzdm, s.zdmimg.com, img.alicdn.com, ossgw.alicdn.com, pgdt.gtimg.cn, btrace.qq.com, *.video.qq.com, *.tc.qq.com, mp.weixin.qq.com, *.uve.weibo.com, weibointl.api.weibo.cn, *.pstatp.com, dsp.toutiao.com, *.snssdk.com, m.client.10010.com, ad.12306.cn, dss0.bdstatic.com
+mlmdacdn.spdb.com.cn, res.yunbusiness.ccb.com, cdn.digitalcnzz.com, magev6.if.qidian.com, img-cdn.huami.com, img30.360buyimg.com, router-cms.s3.cn-north-1.jdcloud-oss.com, upload-cdn.orayimg.com, dss0.bdstatic.com, tysdk.95516.com, ads.95516.com, wallet.95516.com, rs.creditcard.cmbc.com.cn, mbs.boc.cn, mlife.jf365.boc.cn, creditcard.bankcomm.com, s3gw.cmbimg.com, static.psbc.com, d.psbc.com, m.360buyimg.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, ms.jr.jd.com, img*.360buyimg.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, wmapi.meituan.com, api.smzdm.com, app-api.smzdm.com, haojia.m.smzdm, s*.zdmimg.com, img.alicdn.com, ossgw.alicdn.com, pgdt.gtimg.cn, btrace.qq.com, *.video.qq.com, *.tc.qq.com, mp.weixin.qq.com, *.uve.weibo.com, weibointl.api.weibo.cn, *.pstatp.com, dsp.toutiao.com, *.snssdk.com, m.client.10010.com, ad.12306.cn, dss0.bdstatic.com
 
+# > 浦发银行
+^https:\/\/mlmdacdn.spdb.com.cn\/oss\/product-mm\/app\/default.*.jpg url reject-200
+# > 建行生活
+^https://res.yunbusiness.ccb.com/service/resource/mng/adMng/2022/202203/20220325/20220325070000000078/b406caab-da67-40fd-bda8-4317af93f49e.jpg url reject
 # > 郑好办
-^https://cdn.digitalcnzz.com/digitalcnzz/zhenghaoban/app/2021-10-14/zhb-f96d9a1e-5dc2-a153-8e08-7d3696ea299c.jpg url reject-200
+^https://cdn.digitalcnzz.com/static/upload/zhenghaoban/app/2022-03-12/zhb-c1dd1f73-682c-adb8-22b3-2039a9dc4851.jpg url reject
+^https://cdn.digitalcnzz.com/static/upload/zhenghaoban/app/2022-03-19/zhb-fbd06d75-0eaf-5ec0-2648-0ffec00a6b56.jpg url reject
+# > 起点读书
+^https://magev6.if.qidian.com/argus/api/v1/client/iosad url reject
+^https://magev6.if.qidian.com/argus/api/v1/bookshelf/getad url reject
+^https://magev6.if.qidian.com/argus/api/v4/client/getsplashscreen? url reject
+# > 小米运动
+^https://img-cdn.huami.com/2022.* url reject-200
+# > 京东云无线宝
+^https://img30.360buyimg.com/smartcloud/ url reject
+# > 360家庭防火墙
+^https://router-cms.s3.cn-north-1.jdcloud-oss.com/routerCms/splash.* url reject
+# > 蒲公英
+^https:\/\/upload-cdn.orayimg.com\/upload\/activity\/2112\/ url reject-200
+# > 百度地图
+^https:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/ url reject-200
+# > 腾讯视频
+^http:\/\/pgdt.gtimg.cn\/ url reject
 # > 云闪付
-^https:\/\/wallet.95516.com\/s\/wl\/icon\/long\/65586.* url reject-200
+^https?+:\/\/(tysdk|ads)\.95516\.com url reject-dict
+^https:\/\/wallet.95516.com\/s\/wl\/icon\/long\/ url reject-200
 # > 光大银行
-^http:\/\/static.cebbank.com\/fileDir\/subject\/resource\/sjyhzqtp\/MOBILEBANKAD\/OPENAD\/ url reject-200
+^http:\/\/static.cebbank.com\/fileDir\/subject\/resource\/sjyhzqtp\/MOBILEBANKAD\/OPENAD\/.*kai.* url reject-200
+^http:\/\/static.cebbank.com\/fileDir\/subject\/resource\/sjyhzqtp\/MOBILEBANKAD\/OPENAD\/(xiaolinmanhuaxiaobao1|tz).* url reject-200
+^http://static.cebbank.com/fileDir/subject/resource/sjyhzqtp/MOBILEBANKAD/OPENAD/sc83.8k.jpg url reject
+^http://static.cebbank.com/fileDir/subject/resource/sjyhzqtp/MOBILEBANKAD/OPENAD/xiaolinmanhua url reject
 # > 全民生活
-^https:\/\/rs.creditcard.cmbc.com.cn\/mmc\/img\/ef476ac4a0784e418aa586f0c7e46efc.jpg url reject-200
+^https://rs.creditcard.cmbc.com.cn/mmc/img/126f35586ece469aa2daf2e451ba7b4d.jpg url reject-200
 # > 中国银行
 ^https:\/\/mbs.boc.cn\/ubas-mgateway-static\/images\/advertType\/ url reject-200
 ^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\? url reject-200
@@ -15,12 +40,11 @@ hostname = cdn.digitalcnzz.com, wallet.95516.com, static.cebbank.com, rs.creditc
 ^https:\/\/creditcard.bankcomm.com\/tfimg\/public00\/M00/25/F3\/ url reject-200
 # > 招商银行
 ^https:\/\/s3gw.cmbimg.com\/mbappinitads\/.*.jpg url reject-200
-# > 掌上生活
-# ^https:\/\/res.cc.cmbimg.com\/fsp\/File\/AdPlatformPublic\/[A-Za-z0-9]+\.jpeg url reject-200
 # > 邮储银行
-^https:\/\/static.psbc.com:8090\/mbank_f\/images\/[0-9]+\.png url reject-200
+^https:\/\/static.psbc.com:8090\/mbank_f\/images\/[0-9]+\.png - reject-200
 # > 邮储信用卡
-^https:\/\/mcc.psbc.com:9090\/mcc\/resources\/[0-9]+\.jpg url reject-200
+^https://d.psbc.com:9091/mcc/resources/[0-9]+\.jpg url reject-200
+^https:\/\/mcc.psbc.com:9090\/mcc\/resources\/[0-9]+\.(jpg|png) url reject-200
 # > 京东&金融
 ^https:\/\/m.360buyimg.com\/mobilecms\/s1125x2436_jfs\/ url reject-200
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start url reject-img
@@ -47,15 +71,16 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 # > 天猫精灵
 ^https:\/\/img.alicdn.com\/imgextra\/i..* url reject-200
 ^https:\/\/ossgw.alicdn.com\/creatives-assets\/image\/ url reject-200
-# > 腾讯视频
-^http:\/\/pgdt.gtimg.cn\/ url reject
+# >> 腾讯视频
 ^https?:\/\/btrace.qq.com url reject-200
 ^https?:\/\/vv\.video\.qq\.com\/getvmind\? url reject-200
 # ^https?:\/\/.+\.mp4.+&sdtfrom=v3004 url reject-200
 ^https?:\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/.+\.tc\.qq\.com\/.+p201\.1\.mp4\? url reject-200
-# > 微信
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject-200
-# > 新浪微博
+# >> 公眾號文章去廣告(2022-03-01)@ddgksf2013
+^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
+# >> 微信
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) url reject-img
+# >> 新浪微博
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject-200
 ^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-200
 ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
@@ -71,7 +96,4 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 # > 12306
 ^https?:\/\/ad\.12306\.cn\/ url reject
 # > 百度地图
-^https:\/\/dss0.bdstatic.com\/-0U0bnSm1A5BphGlnYG\/ url reject-200
 ^https:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.jpg url reject
-# > 返利网
-^http:\/\/.*.51fanli.net\/app\/images\/splash\/.* url reject-200
