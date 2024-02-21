@@ -33,6 +33,7 @@ const json = {
         "大雪": "11d", 
         "暴雪": "11d",
         "雪": "9d",
+        "下雪": "9d",
         "刮风": "14d",
         "有风": "14d"
       },
@@ -69,6 +70,7 @@ const json = {
         "大雪": "cloud.snow.fill", 
         "暴雪": "cloud.snow.fill",
         "雪": "cloud.snow.fill",
+        "下雪": "cloud.snow.fill",
         "刮风": "wind",
         "有风": "wind",
       }
