@@ -35,7 +35,8 @@ const json = {
         "雪": "9d",
         "下雪": "9d",
         "刮风": "14d",
-        "有风": "14d"
+        "有风": "14d",
+        "dunno": "dunno",
       },
       "weatherSF": {
         "阳光明媚": "sun.max.fill",
@@ -73,6 +74,7 @@ const json = {
         "下雪": "cloud.snow.fill",
         "刮风": "wind",
         "有风": "wind",
+        "dunno": "dunno",
       }
   }
   const weatherDes = () => {
