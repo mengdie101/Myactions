@@ -1,0 +1,23 @@
+{
+    "DJGs-101": {
+        "name": "锁屏天气 Ⅰ",
+        "file_name": "weatherLock1",
+        "version": "V1.0",
+        "notes": "更新说明：\n\n- 适配菜单界面\n- 优化代码，并开源",
+        "updateTime": "\n\n更新时间：2022-03-15 20:00"
+    },
+    "DJGs-102": {
+        "name": "锁屏天气 Ⅱ",
+        "file_name": "weatherLock2",
+        "version": "V2.1",
+        "notes": "更新说明：\n\n- 适配菜单界面\n- 代码开源",
+        "updateTime": "\n\n更新时间：2022-04-11 20:00"
+    },
+    "DJGs-103": {
+        "name": "锁屏天气 Ⅲ",
+        "file_name": "weatherLock3",
+        "version": "V1.1",
+        "notes": "更新说明：\n\n- 新版发布，设置更加方便\n- 基础设置左上角查看常见问题",
+        "updateTime": "\n\n更新时间：2022-04-09 00:00"
+    }
+}
