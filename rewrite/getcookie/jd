@@ -1,5 +1,6 @@
 [MITM]
-hostname = access.video.qq.com
+#hostname = access.video.qq.com
+hostname = me-api.jd.com, api.m.jd.com
 
 [rewrite_local]
 ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
