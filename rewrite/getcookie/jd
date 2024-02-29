@@ -2,6 +2,6 @@
 hostname = me-api.jd.com, api.m.jd.com
 
 [rewrite_local]
-^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+#^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
 ^https:\/\/me-api\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/JD_extra_cookies.js
 #^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/JD_extra_cookies.js
