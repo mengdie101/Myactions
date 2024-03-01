@@ -1,0 +1,4 @@
+hostname = newclient.map.baidu.com
+
+# > 百度地图
+^https:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=ads url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/baidumap.js
