@@ -2,4 +2,5 @@
 hostname = access.video.qq.com
 
 [rewrite_local]
-^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/videoqq.cookie.js
+^https?:\/\/iacc\.qq\.com url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/videoqq.cookie.js
