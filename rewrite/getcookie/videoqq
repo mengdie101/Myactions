@@ -1,6 +1,6 @@
 [MITM]
-hostname = access.video.qq.com
+hostname = access.video.qq.com, iacc.rec.qq.com
 
 [rewrite_local]
 ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/videoqq.cookie.js
-^https?:\/\/iacc\.qq\.com url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/videoqq.cookie.js
+^https?:\/\/iacc\.rec\.qq\.com url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/videoqq.cookie.js
