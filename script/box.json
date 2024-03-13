@@ -384,19 +384,19 @@
             "author": "@evilbutcher",
             "settings": [
                 {
-                    "id": "evil_hzhCookie",
+                    "id": "@hzh.evil_hzhCookie",
                     "name": "hzhCookie",
                     "type": "text",
                     "desc": "华住会cookie"
                 },
                 {
-                    "id": "evil_hzhUserToken",
+                    "id": "@hzh.evil_hzhUserToken",
                     "name": "hzhUserToken",
                     "type": "text",
                     "desc": "华住会hzhUserToken"
                 },
                 {
-                    "id": "evil_hzhUserAgent",
+                    "id": "@hzh.evil_hzhUserAgent",
                     "name": "hzhUserAgent",
                     "type": "text",
                     "desc": "华住会hzhUserAgent"
