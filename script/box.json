@@ -1,22 +1,10 @@
 {
     "id": "mengdie101.app.sub",
-    "name": "自用应用订阅",
+    "name": "🎉自用应用订阅",
     "author": "@mengdie101",
     "icon": "https://avatars3.githubusercontent.com/u/23498579?s=460&u=1e87605e4abc4e6ecf3edd8b1d730227f54db4d4&v=4",
-    "repo": "https://github.com/mengdie101/Script",
+    "repo": "https://github.com/mengdie101/Myactions",
     "apps": [
-        {
-            "id": "10010Ck",
-            "name": "中国联通",
-            "keys": [
-                "@YaYa_10010.cookie"
-            ],
-            "author": "@dompling",
-            "icons": [
-                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/10010.png",
-                "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png"
-            ]
-        },
         {
             "id": "JD_Cookies_remark",
             "name": "登录助手",
@@ -306,7 +294,6 @@
                 "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
                 "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
             ],
-            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js",
             "keys": [
                 "sy_token_wb",
                 "wb_cookie",
@@ -373,9 +360,6 @@
         {
             "id": "hzh",
             "name": "华住会",
-            "descs_html": [
-                "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js\">脚本地址</a>】"
-            ],
             "keys": [
                 "@hzh.evil_hzhCookie",
                 "@hzh.evil_hzhUserToken",
@@ -402,7 +386,6 @@
                     "desc": "华住会hzhUserAgent"
                 }
             ],
-            "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hzh",
             "icons": [
                 "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png",
                 "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh.png"
@@ -410,12 +393,8 @@
         },
         {
             "id": "v.qq.com",
-            "name": "qqvideo",
+            "name": "腾讯视频",
             "author": "@MartinsKing",
-            "script": "https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/videoqq.js",
-            "descs_html": [
-                ""
-            ],
             "icons": [
                 "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/videoqq.png",
                 "https://raw.githubusercontent.com/Orz-3/mini/master/Color/videoqq.png"
