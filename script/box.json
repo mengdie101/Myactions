@@ -1,1 +1,483 @@
-
+{
+    "id": "mengdie101.app.sub",
+    "name": "自用应用订阅",
+    "author": "@mengdie101",
+    "icon": "https://avatars3.githubusercontent.com/u/23498579?s=460&u=1e87605e4abc4e6ecf3edd8b1d730227f54db4d4&v=4",
+    "repo": "https://github.com/mengdie101/Script",
+    "apps": [
+        {
+            "id": "10010Ck",
+            "name": "中国联通",
+            "keys": [
+                "@YaYa_10010.cookie"
+            ],
+            "author": "@dompling",
+            "icons": [
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/10010.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png"
+            ]
+        },
+        {
+            "id": "JD_Cookies_remark",
+            "name": "登录助手",
+            "keys": [
+                "CookieIndex",
+                "@jd_ck_remark.remark",
+                "@jd_ck_remark.mute"
+            ],
+            "descs_html": [
+                "若需要方便浏览：右上角菜单->打开调试模式->调试页面地址",
+                "<a href='https://raw.githubusercontent.com/dompling/chavyleung-boxjs/boxjs/box/chavy.boxjs.html' target='_blank'>调试页面地址</a>"
+            ],
+            "settings": [
+                {
+                    "id": "@jd_ck_remark.mute",
+                    "name": "静音",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": "不会执行通知提示"
+                },
+                {
+                    "id": "CookieIndex",
+                    "name": "默认账号",
+                    "val": 0,
+                    "type": "text",
+                    "autoGrow": false,
+                    "rows": 2,
+                    "placeholder": "cookie 下标（0）"
+                },
+                {
+                    "id": "@jd_ck_remark.actions",
+                    "name": "快捷跳转",
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": false,
+                    "rows": 4,
+                    "desc": "快捷跳转 (JSON 格式)",
+                    "primary": [
+                        "title"
+                    ],
+                    "child": [
+                        {
+                            "id": "title",
+                            "name": "标题",
+                            "type": "text"
+                        },
+                        {
+                            "id": "icon",
+                            "name": "图标",
+                            "type": "text"
+                        },
+                        {
+                            "id": "url",
+                            "name": "跳转地址",
+                            "type": "text"
+                        },
+                        {
+                            "id": "where",
+                            "name": "显示条件",
+                            "type": "text"
+                        },
+                        {
+                            "id": "color",
+                            "name": "图标背景",
+                            "type": "colorpicker"
+                        }
+                    ]
+                },
+                {
+                    "id": "@jd_ck_remark.remark",
+                    "name": "CK 备注列表",
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": false,
+                    "rows": 8,
+                    "desc": "CK 备注列表 (JSON 格式)",
+                    "primary": [
+                        "nickname",
+                        "status"
+                    ],
+                    "child": [
+                        {
+                            "id": "index",
+                            "name": "下标",
+                            "type": "text",
+                            "disabled": true
+                        },
+                        {
+                            "id": "username",
+                            "name": "用户 pin",
+                            "disabled": true,
+                            "type": "text"
+                        },
+                        {
+                            "id": "nickname",
+                            "name": "昵称",
+                            "type": "text"
+                        },
+                        {
+                            "id": "qywxUserId",
+                            "name": "企业微信通知 ID",
+                            "type": "text"
+                        },
+                        {
+                            "id": "cardId",
+                            "name": "身份证",
+                            "type": "text"
+                        },
+                        {
+                            "id": "paymentCode",
+                            "name": "支付密码",
+                            "type": "text"
+                        },
+                        {
+                            "id": "avatar",
+                            "name": "头像",
+                            "type": "text"
+                        },
+                        {
+                            "id": "mobile",
+                            "name": "手机号",
+                            "type": "text"
+                        },
+                        {
+                            "id": "remark",
+                            "name": "备注",
+                            "type": "text"
+                        },
+                        {
+                            "id": "isPlusVip",
+                            "name": "是否是 VIP",
+                            "disabled": true,
+                            "type": "text"
+                        },
+                        {
+                            "id": "beanNum",
+                            "name": "京豆数量",
+                            "disabled": true,
+                            "type": "text"
+                        },
+                        {
+                            "id": "fruit",
+                            "name": "农场进度",
+                            "disabled": true,
+                            "type": "text"
+                        }
+                    ]
+                }
+            ],
+            "icons": [
+                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+                "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+            ],
+            "author": "@dompling",
+            "repo": "https://github.com/dompling/Script/blob/master/jd/jd_cookie_search.js",
+            "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_cookie_search.js"
+        },
+        {
+            "id": "JD_Cookies",
+            "name": "京东账号",
+            "keys": [
+                "CookiesJD",
+                "cks_get_mute"
+            ],
+            "descs_html": [
+                "若需要方便浏览：右上角菜单->打开调试模式->调试页面地址",
+                "<a href='https://raw.githubusercontent.com/dompling/chavyleung-boxjs/boxjs/box/chavy.boxjs.html' target='_blank'>调试页面地址</a>"
+            ],
+            "settings": [
+                {
+                    "id": "cks_get_mute",
+                    "name": "静音获取",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": "更新时，不会执行通知提示"
+                },
+                {
+                    "id": "del_condition",
+                    "name": "删除条件",
+                    "val": "",
+                    "type": "text",
+                    "desc": "输入的条件,运行一次之后则会清空条件"
+                },
+                {
+                    "id": "CookiesJD",
+                    "name": "CK 列表",
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": false,
+                    "rows": 8,
+                    "desc": "CK 列表 (JSON 格式)",
+                    "primary": [
+                        "userName"
+                    ],
+                    "child": []
+                }
+            ],
+            "icons": [
+                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+                "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+            ],
+            "author": "@dompling",
+            "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
+            "scripts": [
+                {
+                    "name": "京东签到",
+                    "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_sign.js"
+                },
+                {
+                    "name": "删除相关 ck",
+                    "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_ck_del.js"
+                }
+            ]
+        },
+        {
+            "id": "blackmatrix7.smzdm",
+            "name": "什么值得买",
+            "keys": [
+                "smzdm_cookie",
+                "smzdm_cookie_id",
+                "smzdm_signin",
+                "smzdm_mission",
+                "smzdm_lottery",
+                "smzdm_blackroom",
+                "smzdm_sync_qinglong"
+            ],
+            "author": "@blackmatrix7",
+            "repo": "https://github.com/blackmatrix7/ios_rule_script/tree/master/script/smzdm",
+            "icons": [
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/smzdm.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Color/smzdm.png"
+            ],
+            "scripts": [
+                {
+                    "name": "执行每日签到与任务",
+                    "script": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js"
+                }
+            ],
+            "settings": [
+                {
+                    "id": "smzdm_sync_qinglong",
+                    "name": "同步数据到青龙面板",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": "将必要数据同步至青龙面板，以执行作业"
+                },
+                {
+                    "id": "smzdm_signin",
+                    "name": "执行每日签到",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": ""
+                },
+                {
+                    "id": "smzdm_mission",
+                    "name": "执行每日任务",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": ""
+                },
+                {
+                    "id": "smzdm_lottery",
+                    "name": "执行每日抽奖",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": ""
+                },
+                {
+                    "id": "smzdm_blackroom",
+                    "name": "脚本运行时进行黑号检测",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "id": "weibo",
+            "name": "新浪微博",
+            "author": "@sunert",
+            "descs_html": [
+                "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js\">配置说明</a></h4>",
+                "<br />",
+                "<p>其中<font color='#FF0000',font-weight: bold>wb_nick</font>为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
+            ],
+            "icons": [
+                "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
+                "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
+            ],
+            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js",
+            "keys": [
+                "sy_token_wb",
+                "wb_cookie",
+                "wb_nick"
+            ],
+            "settings": [
+                {
+                    "id": "sy_token_wb",
+                    "name": "Token",
+                    "val": "",
+                    "type": "text",
+                    "desc": "微博Token"
+                },
+                {
+                    "id": "wb_cookie",
+                    "name": "Cookie",
+                    "val": "",
+                    "type": "text",
+                    "desc": "微博Cookie"
+                },
+                {
+                    "id": "wb_nick",
+                    "name": "昵称",
+                    "val": "",
+                    "type": "text",
+                    "desc": "微博昵称"
+                }
+            ]
+        },
+        {
+            "id": "yiLi",
+            "name": "伊利乳品",
+            "keys": [
+                "id77_yiLi_cookies"
+            ],
+            "settings": [
+                {
+                    "id": "id77_yiLi_cookies",
+                    "name": "session",
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 2,
+                    "desc": "多账号，不支持单独管理，可以手动更改，不懂不建议修改"
+                }
+            ],
+            "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js",
+            "author": "@id77",
+            "repo": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js",
+            "icons": [
+                "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png",
+                "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png"
+            ],
+            "descs_html": [
+                "1、支持多账号，添加好配置，注册小程序后点个人中心，<a target=\"_blank\" href=\"https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js\">前往文件获取</a>",
+                "2、<img style=\"width: 120px\" src=\"https://raw.githubusercontent.com/id77/QuantumultX/master/img/yiLi_qr.png\" />",
+                "长按保存小程序码，用微信相机识别进入注册。",
+                "麻烦点一下助力，开发不易 ❤️",
+                "目前支持自动签到，每日阅读、分享任务",
+                "<br />",
+                "ps: 可以用几个微信弄多个账号，但需要手机号"
+            ]
+        },
+        {
+            "id": "hzh",
+            "name": "华住会",
+            "descs_html": [
+                "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js\">脚本地址</a>】"
+            ],
+            "keys": [
+                "@hzh.evil_hzhCookie",
+                "@hzh.evil_hzhUserToken",
+                "@hzh.evil_hzhUserAgent"
+            ],
+            "author": "@evilbutcher",
+            "settings": [
+                {
+                    "id": "evil_hzhCookie",
+                    "name": "hzhCookie",
+                    "type": "text",
+                    "desc": "华住会cookie"
+                },
+                {
+                    "id": "evil_hzhUserToken",
+                    "name": "hzhUserToken",
+                    "type": "text",
+                    "desc": "华住会hzhUserToken"
+                },
+                {
+                    "id": "evil_hzhUserAgent",
+                    "name": "hzhUserAgent",
+                    "type": "text",
+                    "desc": "华住会hzhUserAgent"
+                }
+            ],
+            "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hzh",
+            "icons": [
+                "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png",
+                "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh.png"
+            ]
+        },
+        {
+            "id": "v.qq.com",
+            "name": "qqvideo",
+            "author": "@MartinsKing",
+            "script": "https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/videoqq.js",
+            "descs_html": [
+                ""
+            ],
+            "icons": [
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/videoqq.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Color/videoqq.png"
+            ],
+            "keys": [
+                "videoqq_pc_cookie",
+                "videoqq_ref_url",
+                "videoqq_cookie"
+            ],
+            "settings": [
+                {
+                    "id": "videoqq_pc_cookie",
+                    "name": "pc_cookie",
+                    "type": "text",
+                    "desc": "腾讯视频网页版cookie"
+                },
+                {
+                    "id": "videoqq_ref_url",
+                    "name": "ref_url",
+                    "type": "text",
+                    "desc": "腾讯视频Request URL"
+                },
+                {
+                    "id": "videoqq_cookie",
+                    "name": "cookie",
+                    "type": "text",
+                    "desc": "腾讯视频app cookie"
+                }
+            ]
+        },
+        {
+            "id": "ysf",
+            "name": "云闪付",
+            "keys": [
+                "unipay_cookieKey",
+                "unipay_authorizationKey",
+                "unipay_userAgentKey"
+            ],
+            "settings": [
+                {
+                    "id": "unipay_cookieKey",
+                    "name": "cookieKey",
+                    "type": "text",
+                    "desc": "云闪付cookie"
+                },
+                {
+                    "id": "unipay_authorizationKey",
+                    "name": "authorizationKey",
+                    "type": "text",
+                    "desc": "云闪付authorizationKey"
+                },
+                {
+                    "id": "unipay_userAgentKey",
+                    "name": "userAgentKey",
+                    "type": "text",
+                    "desc": "云闪付userAgentKey"
+                }
+            ],
+            "icons": [
+                "https://raw.githubusercontent.com/lcmigg/Surge/master/img/unionpay.png",
+                "https://raw.githubusercontent.com/lcmigg/Surge/master/img/unionpay.png"
+            ]
+        }
+    ]
+}
