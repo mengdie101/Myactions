@@ -322,6 +322,9 @@ host-suffix, cm.adcommon.bilibili.com, reject
 host-suffix, cm.game.bilibili.com, reject
 host-suffix, cm.track.biligame.bilibili.com, reject
 
+# > 贝乐虎
+host-suffix, sspfront.ubestkid.com, reject
+
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
 
@@ -345,6 +348,9 @@ host-keyword, p3.pstatp.com, reject
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
 # > 光大银行阳光惠生活
 host-keyword, talk.bz.getui.com, reject
+
+# > 工商银行
+host-suffix, pageviewp.icbc.com.cn, reject
 
 # > 谷歌
 host-suffix, google-analytics.com, reject
