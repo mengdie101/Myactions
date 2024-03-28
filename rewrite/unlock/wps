@@ -1,4 +1,0 @@
-hostname = account.wps.cn
-
-# WPS (By eHpo)
-^https://account.wps.cn/api/user/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
