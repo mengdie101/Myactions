@@ -1,7 +1,7 @@
 hostname = pan.baidu.com, sdk.1rtb.net
 
 # 百度网盘 解锁在线视频倍率/清晰度
-^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/mengdie101/Myactions/master/script/BaiduCloud.js
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body BaiduCloud.js
 # > 百度网盘_开屏广告
 ^https:\/\/sdk\.1rtb\.net\/sdk\/req_ad url reject-200
 # > 百度网盘_设置信息流@ddgksf2013
