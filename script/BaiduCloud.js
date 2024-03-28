@@ -35,7 +35,7 @@ if ($response.body) {
             }, {
                 "product_name": "svip10_nd",
                 "product_description": "超级会员",
-                "function_num": 0,
+                "function_num": 100,
                 "start_time": 1553702399,
                 "buy_description": "",
                 "buy_time": 0,
