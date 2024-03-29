@@ -13,7 +13,7 @@
 #############################################
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, baichuan.baidu.com, api*.tuisong.baidu.com, afd.baidu.com, mobads.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, sa*.tuisong.baidu.com, newclient.map.baidu.com, gw.alicdn.com, img.alicdn.com, mobile.cebbank.com, yghsh.cebbank.com, v.icbc.com.cn, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, is.snssdk.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn, creditcard.bankcomm.com, lban.spdb.com.cn, wap.spdb.com.cn, us.l.qq.com, y.gtimg.cn, haojia-api.smzdm.com, app-api.smzdm.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, vv.video.qq.com, ccmsupport-sz.tenpay.com, btrace.qq.com, api2.helper.qq.com, *.beacon.qq.com, lives.l.qq.com, imgcache.qq.com, mtteve.beacon.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, 3gimg.qq.com, splashqqlive.gtimg.com, qzonestyle.gtimg.cn, discuz.gtimg.cn, bla.gtimg.com, mmgr.gtimg.com, bk.bingo.qq.com, ios.wps.cn, mobile-pic.cache.iciba.com, mp.weixin.qq.com, api-mifit-cn2.huami.com, static.psbc.com, mcc.psbc.com, d.psbc.com, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn, client.app.coc.10086.cn, h.client.app.coc.10086.cn, m.client.10010.com, *.pstatp.com, amemv.com, musical.com, snssdk.com, tiktokv.com, dsp.toutiao.com, app-izz.zhengzhou.gov.cn
+hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, baichuan.baidu.com, api*.tuisong.baidu.com, afd.baidu.com, mobads.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, sa*.tuisong.baidu.com, newclient.map.baidu.com, gw.alicdn.com, img.alicdn.com, mobile.cebbank.com, yghsh.cebbank.com, v.icbc.com.cn, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, is.snssdk.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn, creditcard.bankcomm.com, lban.spdb.com.cn, wap.spdb.com.cn, us.l.qq.com, y.gtimg.cn, haojia-api.smzdm.com, app-api.smzdm.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, vv.video.qq.com, ccmsupport-sz.tenpay.com, btrace.qq.com, api2.helper.qq.com, *.beacon.qq.com, lives.l.qq.com, imgcache.qq.com, mtteve.beacon.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, 3gimg.qq.com, splashqqlive.gtimg.com, qzonestyle.gtimg.cn, discuz.gtimg.cn, bla.gtimg.com, mmgr.gtimg.com, bk.bingo.qq.com, ios.wps.cn, mobile-pic.cache.iciba.com, mp.weixin.qq.com, api-mifit-cn2.huami.com, static.psbc.com, mcc.psbc.com, d.psbc.com, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn, client.app.coc.10086.cn, h.client.app.coc.10086.cn, m.client.10010.com, *.pstatp.com, amemv.com, musical.com, snssdk.com, tiktokv.com, dsp.toutiao.com, app-izz.zhengzhou.gov.cn
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -142,19 +142,16 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 美团
-# hostname = img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.net, apimobile.meituan.com
+# hostname = img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com
 ^https?:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
-^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+?\.jpg url reject-200
-^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+?\.jpg\?may_covertWebp url reject-200
+^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg url reject-200
+^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp url reject-200
 ^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002 url reject-img
 ^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\? url reject
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo\? url reject
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture url reject
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject
 ^https?:\/\/apimobile\.meituan\.com\/appupdate\/mach\/checkUpdate? url reject
-^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ url reject
-^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp url reject-img
-^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|mmc|wmbanner)\/ url reject
 # 美团订单详情页更多推荐
 ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends url reject
 
