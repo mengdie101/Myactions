@@ -554,7 +554,6 @@ host-suffix, jrlt.beacon.qq.com, reject
 host-suffix, jsqmt.qq.com, reject
 host-suffix, lives.l.qq.com, reject
 host-suffix, livep.l.qq.com, reject
-host-suffix, mi.gdt.qq.com, reject
 host-suffix, livep.l.ott.video.qq.com, reject
 host-suffix, lives.l.ott.video.qq.com, reject
 host-suffix, masdk.3g.qq.com, reject
