@@ -620,6 +620,8 @@ host, wxsmsdy.video.qq.com, reject
 
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
+# 微博开屏广告预加载
+host, bootpreload.uve.weibo.com
 
 
 # >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
