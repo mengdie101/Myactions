@@ -377,7 +377,6 @@ host-suffix, cm.kwad.com, reject
 
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 美团
-host, flowplus.meituan.net, reject
 host-suffix, analytics.meituan.net, reject
 host-suffix, meituan.xn, reject
 host-suffix, meituan.yoga, reject
