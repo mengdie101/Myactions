@@ -199,9 +199,9 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 # > 天猫精灵|淘宝
 # hostname = admc.m.taobao.com, acs.m.taobao.com, img.alicdn.com, ossgw.alicdn.com, heic.alicdn.com, gw.alicdn.com
 ^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
-^https://acs.m.taobao.com/gw/mtop.alibaba.aicloud.splash.requestsplashdata url reject-200
-^https:\/\/img.alicdn.com\/imgextra\/i..* -url reject-200
-^https:\/\/ossgw.alicdn.com\/creatives-assets\/image\/ url reject-200
+^https?:\/\/acs.m.taobao.com/gw/mtop.alibaba.aicloud.splash.requestsplashdata url reject-200
+^https?:\/\/img.alicdn.com\/imgextra\/i..* -url reject-200
+^https?:\/\/ossgw.alicdn.com\/creatives-assets\/image\/ url reject-200
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q\d0\.jpg_\.(heic|webp)$ url reject
 
 # > 腾讯视频
@@ -226,7 +226,6 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom= url reject-img
 ^https?:\/\/imgcache\.qq\.com\/qqlive\/ url reject-img
 ^https?:\/\/mtteve\.beacon\.qq\.com\/analytics url reject-img
-^https?:\/\/vv\.video\.qq\.com\/getvmind\? url reject-200
 ^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons url reject-200
 ^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info url reject-200
 ^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/ url reject-200
@@ -238,7 +237,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png url reject-img
 ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/ url reject-img
 ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4} url reject-img
-^https?://bk\.bingo\.qq\.com/bk/crx/data/videoAd.*$ url reject-dict
+^https?:\/\/bk\.bingo\.qq\.com/bk/crx/data/videoAd.*$ url reject-dict
 
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
@@ -302,7 +301,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\?txnId=2PIC000001 url reject-200
 
 # > 中国移动
-# hostname = client.app.coc.10086.cn, h.client.app.coc.10086.cn
+# hostname = client.app.coc.10086.cn
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit url reject-200
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList url reject
 # 多个悬浮窗
