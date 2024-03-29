@@ -100,53 +100,6 @@ host-suffix, u3.ucweb.com, reject
 # > 阿里云
 IP-CIDR, 203.107.1.1/24, reject
 
-# > 爱奇艺
-host, api.iqiyi.com, reject
-host, cr-status.iqiyi.com, reject
-host, f74f7f7765f8a2f6.ngaa.net.cn, reject
-host, ef-dongfeng.tanx.com, reject
-host, iqiyim.adtrack.enlightent.cn, reject
-host, dig.bdurl.net, reject
-host, t7z.cupid.iqiyi.com, reject
-host, t7z.cupid.ptqy.gitv.tv, reject
-host-suffix, cupid.iqiyi.com, reject
-host-suffix, t7z.cupid.iqiyi.com, reject
-host-suffix, static-s.iqiyi.com, reject
-host-suffix, a.ckm.iqiyi.com, reject
-host-suffix, ad.m.iqiyi.com, reject
-host-suffix, afp.iqiyi.com, reject
-host-suffix, api.cupid.iqiyi.com, reject
-host-suffix, api.cupid.qiyi.com, reject
-host-suffix, c.uaa.iqiyi.com, reject
-host-suffix, cloudpush.iqiyi.com, reject
-host-suffix, cm.passport.iqiyi.com, reject
-host-suffix, count.game.pps.tv, reject
-host-suffix, cupid.iqiyi.com, reject
-host-suffix, emoticon.sns.iqiyi.com, reject
-host-suffix, gamecenter.iqiyi.com, reject
-host-suffix, mbdlog.iqiyi.com, reject
-host-suffix, msg.iqiyi.com, reject
-host-suffix, msg.video.qiyi.com, reject
-host-suffix, msg2.video.qiyi.com, reject
-host-suffix, static.g.iqiyi.com, reject
-host-suffix, static.g.ppstream.com, reject
-host-suffix, store.iqiyi.com, reject
-host-suffix, tracker.sns.iqiyi.com, reject
-host-suffix, yuedu.iqiyi.com, reject
-host-suffix, msga.cupid.iqiyi.com, reject
-host-suffix, nl.notice.iqiyi.com, reject
-host-suffix, nl.rcd.iqiyi.com, reject
-host-suffix, notice.iqiyi.com, reject
-host-suffix, noxagile.duapp.com, reject
-host-suffix, paopao.iqiyi.com, reject
-host-suffix, policy.video.iqiyi.com, reject
-host-suffix, ifacelog.iqiyi.com, reject
-IP-CIDR, 203.107.63.154/32, reject
-IP-CIDR, 101.227.97.240/32, reject
-IP-CIDR, 101.227.200.11/32, reject
-IP-CIDR, 101.227.200.28/32, reject
-IP-CIDR, 124.192.153.42/32, reject
-
 
 # >>>>>>>>>>>>>>> ✅ B ✅ <<<<<<<<<<<<<<
 # > 百度
@@ -324,10 +277,6 @@ host-suffix, sspfront.ubestkid.com, reject
 
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
-# > 滴滴青桔（支付界面图片有误杀）
-;host-keyword, pt-starimg.didistatic.com, reject
-ip-cidr, 203.107.1.1/24, reject
-
 # > 抖音
 host-keyword, bds.snssdk.com, reject
 host-keyword, p3.pstatp.com, reject
@@ -370,23 +319,6 @@ host-suffix, afd.l.google.com, reject
 host-suffix, www.googleadservices.com, reject
 host-suffix, www.google-analytics.com, reject
 host, ads.youtube.com, reject
-
-# > 高德
-;host, restapi.amap.com, reject
-host-suffix, adiu.amap.com, reject
-host, aboard.apilocate.amap.com, reject
-host, apiinit.amap.com, reject
-host, icloud-amap.com, reject
-host, logs.amap.com, reject
-host-suffix, dualstack-logs.amap.com, reject
-host-suffix, logs.amap.com, reject
-host-suffix, optimus-ads.amap.com, reject
-host-suffix, page.amap.com, reject
-host, optimus-ads.amap.com, reject
-host, optimus-ads.amap.com.w.alikunlun.com, reject
-host-suffix, shouji.sougou.com, reject
-host, u51.me, reject
-host-suffix, u51.me, reject
 
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
