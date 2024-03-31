@@ -1,0 +1,5 @@
+[MitM]
+hostname = club.yili.com
+
+[rewrite_local]
+https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call url script-request-body https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js
