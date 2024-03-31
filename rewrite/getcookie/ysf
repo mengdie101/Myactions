@@ -1,0 +1,5 @@
+[MitM]
+hostname = youhui.95516.com
+
+[rewrite_local]
+^https:\/\/youhui\.95516\.com\/newsign\/api\/shop_items url script-request-header ysf.js
