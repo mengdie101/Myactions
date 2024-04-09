@@ -490,7 +490,7 @@ host-suffix, m-adash.m.taobao.com, reject
 host-suffix, adashbc.m.taobao.com, reject
 
 # > 腾讯视频
-host, adsmind.gdtimg.com, reject
+;host, adsmind.gdtimg.com, reject
 host, btrace.qq.com, reject
 host, btrace.video.qq.com, reject
 host, info4.video.qq.com, reject
@@ -629,6 +629,7 @@ host, tracking.intl.miui.com, reject
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
 # > 云闪付
+host, ads.cup.com.cn, reject
 host, ads.95516.com, reject
 host, cm-10-138.getui.com, reject
 host, sdk.open.talk.getui.net, reject
@@ -645,7 +646,7 @@ IP-CIDR, 120.240.95.37/32, reject
 host-suffix, m1.ad.10010.com, reject
 
 # > 字节跳动
-host, ad.zijieapi.com, reject
+;host, ad.zijieapi.com, reject
 host-suffix, -normal-lq.zijieapi.com, reject
 host-keyword, ad-sign.byteimg.com, reject
 
