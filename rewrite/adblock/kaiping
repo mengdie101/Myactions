@@ -69,7 +69,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 
 # > 百度地图
 # hostname = newclient.map.baidu.com
-^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?.*qt=(ads|rgc) url reject-200
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?.*qt=ads url reject-200
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
