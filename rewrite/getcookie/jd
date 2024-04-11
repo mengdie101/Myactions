@@ -5,4 +5,4 @@ hostname = api.m.jd.com
 [rewrite_local]
 #^https:\/\/me-api\.jd\.com\/user_new\/info\/GetJDUserInfoUnion url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/JD_extra_cookies.js
 #^https:\/\/api\.m\.jd\.com\/api\?functionId=GetJDUserInfoUnion url script-request-header https://raw.githubusercontent.com/mengdie101/Myactions/master/script/JD_extra_cookies.js
-https:\/\/api\.m\.jd\.com\/api\?.*functionId=queryJDUserInfo url script-request-header https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_cookie.js
+^https:\/\/api\.m\.jd\.com\/api\?functionId=GetJDUserInfoUnion url script-request-header https://raw.githubusercontent.com/dompling/Script/467062cbb023feedee4162a44af7a2924c8a0b86/jd/JD_extra_cookie.js
