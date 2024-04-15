@@ -8711,7 +8711,6 @@ host-suffix, app-measurement.com, reject
 host-suffix, mob.com, reject
 host-suffix, api.joybj.com, reject
 host-suffix, api.whizzone.com, reject
-host-suffix, mmstat.com, reject
 host-suffix, 4paradigm.com, reject
 host-suffix, catch.gift, reject
 host-suffix, pubnative.net, reject
