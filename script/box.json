@@ -1,730 +1,742 @@
 {
-    "id": "mengdie101.app.sub",
-    "name": "🎉自用应用订阅",
-    "author": "@mengdie101",
-    "icon": "https://raw.githubusercontent.com/mengdie101/Myactions/master/icon/IMG_2350.gif",
-    "repo": "https://github.com/mengdie101/Myactions",
+    "id": "mengdie101.app.sub", 
+    "name": "🎉自用应用订阅", 
+    "author": "@mengdie101", 
+    "icon": "https://raw.githubusercontent.com/mengdie101/Myactions/master/icon/IMG_2350.gif", 
+    "repo": "https://github.com/mengdie101/Myactions", 
     "apps": [
         {
-            "id": "JD_Cookies_remark",
-            "name": "登录助手",
+            "id": "JD_Cookies_remark", 
+            "name": "登录助手", 
             "keys": [
-                "CookieIndex",
-                "@jd_ck_remark.remark",
+                "CookieIndex", 
+                "@jd_ck_remark.remark", 
                 "@jd_ck_remark.mute"
-            ],
+            ], 
             "descs_html": [
-                "若需要方便浏览：右上角菜单->打开调试模式->调试页面地址",
+                "若需要方便浏览：右上角菜单->打开调试模式->调试页面地址", 
                 "<a href='https://raw.githubusercontent.com/dompling/chavyleung-boxjs/boxjs/box/chavy.boxjs.html' target='_blank'>调试页面地址</a>"
-            ],
+            ], 
             "settings": [
                 {
-                    "id": "@jd_ck_remark.mute",
-                    "name": "静音",
-                    "val": false,
-                    "type": "boolean",
+                    "id": "@jd_ck_remark.mute", 
+                    "name": "静音", 
+                    "val": false, 
+                    "type": "boolean", 
                     "desc": "不会执行通知提示"
-                },
+                }, 
                 {
-                    "id": "CookieIndex",
-                    "name": "默认账号",
-                    "val": 0,
-                    "type": "text",
-                    "autoGrow": false,
-                    "rows": 2,
+                    "id": "CookieIndex", 
+                    "name": "默认账号", 
+                    "val": 0, 
+                    "type": "text", 
+                    "autoGrow": false, 
+                    "rows": 2, 
                     "placeholder": "cookie 下标（0）"
-                },
+                }, 
                 {
-                    "id": "@jd_ck_remark.actions",
-                    "name": "快捷跳转",
-                    "val": "",
-                    "type": "textarea",
-                    "autoGrow": false,
-                    "rows": 4,
-                    "desc": "快捷跳转 (JSON 格式)",
+                    "id": "@jd_ck_remark.actions", 
+                    "name": "快捷跳转", 
+                    "val": "", 
+                    "type": "textarea", 
+                    "autoGrow": false, 
+                    "rows": 4, 
+                    "desc": "快捷跳转 (JSON 格式)", 
                     "primary": [
                         "title"
-                    ],
+                    ], 
                     "child": [
                         {
-                            "id": "title",
-                            "name": "标题",
+                            "id": "title", 
+                            "name": "标题", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "icon",
-                            "name": "图标",
+                            "id": "icon", 
+                            "name": "图标", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "url",
-                            "name": "跳转地址",
+                            "id": "url", 
+                            "name": "跳转地址", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "where",
-                            "name": "显示条件",
+                            "id": "where", 
+                            "name": "显示条件", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "color",
-                            "name": "图标背景",
+                            "id": "color", 
+                            "name": "图标背景", 
                             "type": "colorpicker"
                         }
                     ]
-                },
+                }, 
                 {
-                    "id": "@jd_ck_remark.remark",
-                    "name": "CK 备注列表",
-                    "val": "",
-                    "type": "textarea",
-                    "autoGrow": false,
-                    "rows": 8,
-                    "desc": "CK 备注列表 (JSON 格式)",
+                    "id": "@jd_ck_remark.remark", 
+                    "name": "CK 备注列表", 
+                    "val": "", 
+                    "type": "textarea", 
+                    "autoGrow": false, 
+                    "rows": 8, 
+                    "desc": "CK 备注列表 (JSON 格式)", 
                     "primary": [
-                        "nickname",
+                        "nickname", 
                         "status"
-                    ],
+                    ], 
                     "child": [
                         {
-                            "id": "index",
-                            "name": "下标",
-                            "type": "text",
+                            "id": "index", 
+                            "name": "下标", 
+                            "type": "text", 
                             "disabled": true
-                        },
+                        }, 
                         {
-                            "id": "username",
-                            "name": "用户 pin",
-                            "disabled": true,
+                            "id": "username", 
+                            "name": "用户 pin", 
+                            "disabled": true, 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "nickname",
-                            "name": "昵称",
+                            "id": "nickname", 
+                            "name": "昵称", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "qywxUserId",
-                            "name": "企业微信通知 ID",
+                            "id": "qywxUserId", 
+                            "name": "企业微信通知 ID", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "cardId",
-                            "name": "身份证",
+                            "id": "cardId", 
+                            "name": "身份证", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "paymentCode",
-                            "name": "支付密码",
+                            "id": "paymentCode", 
+                            "name": "支付密码", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "avatar",
-                            "name": "头像",
+                            "id": "avatar", 
+                            "name": "头像", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "mobile",
-                            "name": "手机号",
+                            "id": "mobile", 
+                            "name": "手机号", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "remark",
-                            "name": "备注",
+                            "id": "remark", 
+                            "name": "备注", 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "isPlusVip",
-                            "name": "是否是 VIP",
-                            "disabled": true,
+                            "id": "isPlusVip", 
+                            "name": "是否是 VIP", 
+                            "disabled": true, 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "beanNum",
-                            "name": "京豆数量",
-                            "disabled": true,
+                            "id": "beanNum", 
+                            "name": "京豆数量", 
+                            "disabled": true, 
                             "type": "text"
-                        },
+                        }, 
                         {
-                            "id": "fruit",
-                            "name": "农场进度",
-                            "disabled": true,
+                            "id": "fruit", 
+                            "name": "农场进度", 
+                            "disabled": true, 
                             "type": "text"
                         }
                     ]
                 }
-            ],
+            ], 
             "icons": [
-                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png", 
                 "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
-            ],
-            "author": "@dompling",
-            "repo": "https://github.com/dompling/Script/blob/master/jd/jd_cookie_search.js",
+            ], 
+            "author": "@dompling", 
+            "repo": "https://github.com/dompling/Script/blob/master/jd/jd_cookie_search.js", 
             "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_cookie_search.js"
-        },
+        }, 
         {
-            "id": "JD_Cookies",
-            "name": "京东账号",
+            "id": "JD_Cookies", 
+            "name": "京东账号", 
             "keys": [
-                "CookiesJD",
+                "CookiesJD", 
                 "cks_get_mute"
-            ],
+            ], 
             "descs_html": [
-                "若需要方便浏览：右上角菜单->打开调试模式->调试页面地址",
+                "若需要方便浏览：右上角菜单->打开调试模式->调试页面地址", 
                 "<a href='https://raw.githubusercontent.com/dompling/chavyleung-boxjs/boxjs/box/chavy.boxjs.html' target='_blank'>调试页面地址</a>"
-            ],
+            ], 
             "settings": [
                 {
-                    "id": "cks_get_mute",
-                    "name": "静音获取",
-                    "val": false,
-                    "type": "boolean",
+                    "id": "cks_get_mute", 
+                    "name": "静音获取", 
+                    "val": false, 
+                    "type": "boolean", 
                     "desc": "更新时，不会执行通知提示"
-                },
+                }, 
                 {
-                    "id": "del_condition",
-                    "name": "删除条件",
-                    "val": "",
-                    "type": "text",
+                    "id": "del_condition", 
+                    "name": "删除条件", 
+                    "val": "", 
+                    "type": "text", 
                     "desc": "输入的条件,运行一次之后则会清空条件"
-                },
+                }, 
                 {
-                    "id": "CookiesJD",
-                    "name": "CK 列表",
-                    "val": "",
-                    "type": "textarea",
-                    "autoGrow": false,
-                    "rows": 8,
-                    "desc": "CK 列表 (JSON 格式)",
+                    "id": "CookiesJD", 
+                    "name": "CK 列表", 
+                    "val": "", 
+                    "type": "textarea", 
+                    "autoGrow": false, 
+                    "rows": 8, 
+                    "desc": "CK 列表 (JSON 格式)", 
                     "primary": [
                         "userName"
-                    ],
-                    "child": []
+                    ], 
+                    "child": [ ]
                 }
-            ],
+            ], 
             "icons": [
-                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png", 
                 "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
-            ],
-            "author": "@dompling",
-            "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
+            ], 
+            "author": "@dompling", 
+            "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js", 
             "scripts": [
                 {
-                    "name": "京东签到",
+                    "name": "京东签到", 
                     "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_sign.js"
-                },
+                }, 
                 {
-                    "name": "删除相关 ck",
+                    "name": "删除相关 ck", 
                     "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_ck_del.js"
                 }
             ]
-        },
+        }, 
         {
-            "id": "blackmatrix7.smzdm",
-            "name": "什么值得买",
+            "id": "blackmatrix7.smzdm", 
+            "name": "什么值得买", 
             "keys": [
-                "smzdm_cookie",
-                "smzdm_cookie_id",
-                "smzdm_signin",
-                "smzdm_mission",
-                "smzdm_lottery",
-                "smzdm_blackroom",
+                "smzdm_cookie", 
+                "smzdm_cookie_id", 
+                "smzdm_signin", 
+                "smzdm_mission", 
+                "smzdm_lottery", 
+                "smzdm_blackroom", 
                 "smzdm_sync_qinglong"
-            ],
-            "author": "@blackmatrix7",
-            "repo": "https://github.com/blackmatrix7/ios_rule_script/tree/master/script/smzdm",
+            ], 
+            "author": "@blackmatrix7", 
+            "repo": "https://github.com/blackmatrix7/ios_rule_script/tree/master/script/smzdm", 
             "icons": [
-                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/smzdm.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/smzdm.png", 
                 "https://raw.githubusercontent.com/Orz-3/mini/master/Color/smzdm.png"
-            ],
+            ], 
             "scripts": [
                 {
-                    "name": "执行每日签到与任务",
+                    "name": "执行每日签到与任务", 
                     "script": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js"
                 }
-            ],
+            ], 
             "settings": [
                 {
-                    "id": "smzdm_sync_qinglong",
-                    "name": "同步数据到青龙面板",
-                    "val": false,
-                    "type": "boolean",
+                    "id": "smzdm_sync_qinglong", 
+                    "name": "同步数据到青龙面板", 
+                    "val": false, 
+                    "type": "boolean", 
                     "desc": "将必要数据同步至青龙面板，以执行作业"
-                },
+                }, 
                 {
-                    "id": "smzdm_signin",
-                    "name": "执行每日签到",
-                    "val": false,
-                    "type": "boolean",
+                    "id": "smzdm_signin", 
+                    "name": "执行每日签到", 
+                    "val": false, 
+                    "type": "boolean", 
                     "desc": ""
-                },
+                }, 
                 {
-                    "id": "smzdm_mission",
-                    "name": "执行每日任务",
-                    "val": false,
-                    "type": "boolean",
+                    "id": "smzdm_mission", 
+                    "name": "执行每日任务", 
+                    "val": false, 
+                    "type": "boolean", 
                     "desc": ""
-                },
+                }, 
                 {
-                    "id": "smzdm_lottery",
-                    "name": "执行每日抽奖",
-                    "val": false,
-                    "type": "boolean",
+                    "id": "smzdm_lottery", 
+                    "name": "执行每日抽奖", 
+                    "val": false, 
+                    "type": "boolean", 
                     "desc": ""
-                },
+                }, 
                 {
-                    "id": "smzdm_blackroom",
-                    "name": "脚本运行时进行黑号检测",
-                    "val": false,
-                    "type": "boolean",
+                    "id": "smzdm_blackroom", 
+                    "name": "脚本运行时进行黑号检测", 
+                    "val": false, 
+                    "type": "boolean", 
                     "desc": ""
                 }
             ]
-        },
+        }, 
         {
-            "id": "weibo",
-            "name": "新浪微博",
-            "author": "@sunert",
+            "id": "weibo", 
+            "name": "新浪微博", 
+            "author": "@sunert", 
             "descs_html": [
-                "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js\">配置说明</a></h4>",
-                "<br />",
+                "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js\">配置说明</a></h4>", 
+                "<br />", 
                 "<p>其中<font color='#FF0000',font-weight: bold>wb_nick</font>为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
-            ],
+            ], 
             "icons": [
-                "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
+                "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png", 
                 "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
-            ],
+            ], 
             "keys": [
-                "sy_token_wb",
-                "wb_cookie",
+                "sy_token_wb", 
+                "wb_cookie", 
                 "wb_nick"
-            ],
+            ], 
             "settings": [
                 {
-                    "id": "sy_token_wb",
-                    "name": "Token",
-                    "val": "",
-                    "type": "text",
+                    "id": "sy_token_wb", 
+                    "name": "Token", 
+                    "val": "", 
+                    "type": "text", 
                     "desc": "微博Token"
-                },
+                }, 
                 {
-                    "id": "wb_cookie",
-                    "name": "Cookie",
-                    "val": "",
-                    "type": "text",
+                    "id": "wb_cookie", 
+                    "name": "Cookie", 
+                    "val": "", 
+                    "type": "text", 
                     "desc": "微博Cookie"
-                },
+                }, 
                 {
-                    "id": "wb_nick",
-                    "name": "昵称",
-                    "val": "",
-                    "type": "text",
+                    "id": "wb_nick", 
+                    "name": "昵称", 
+                    "val": "", 
+                    "type": "text", 
                     "desc": "微博昵称"
                 }
             ]
-        },
+        }, 
         {
-            "id": "yiLi",
-            "name": "伊利乳品",
+            "id": "yiLi", 
+            "name": "伊利乳品", 
             "keys": [
                 "id77_yiLi_cookies"
-            ],
+            ], 
             "settings": [
                 {
-                    "id": "id77_yiLi_cookies",
-                    "name": "session",
-                    "val": "",
-                    "type": "textarea",
-                    "autoGrow": true,
-                    "rows": 2,
+                    "id": "id77_yiLi_cookies", 
+                    "name": "session", 
+                    "val": "", 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 2, 
                     "desc": "多账号，不支持单独管理，可以手动更改，不懂不建议修改"
                 }
-            ],
-            "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js",
-            "author": "@id77",
-            "repo": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js",
+            ], 
+            "script": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js", 
+            "author": "@id77", 
+            "repo": "https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.js", 
             "icons": [
-                "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png",
+                "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png", 
                 "https://raw.githubusercontent.com/id77/QuantumultX/master/icon/yiLi.png"
-            ],
+            ], 
             "descs_html": [
-                "1、支持多账号，添加好配置，注册小程序后点个人中心，<a target=\"_blank\" href=\"https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js\">前往文件获取</a>",
-                "2、<img style=\"width: 120px\" src=\"https://raw.githubusercontent.com/id77/QuantumultX/master/img/yiLi_qr.png\" />",
-                "长按保存小程序码，用微信相机识别进入注册。",
-                "麻烦点一下助力，开发不易 ❤️",
-                "目前支持自动签到，每日阅读、分享任务",
-                "<br />",
+                "1、支持多账号，添加好配置，注册小程序后点个人中心，<a target=\"_blank\" href=\"https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js\">前往文件获取</a>", 
+                "2、<img style=\"width: 120px\" src=\"https://raw.githubusercontent.com/id77/QuantumultX/master/img/yiLi_qr.png\" />", 
+                "长按保存小程序码，用微信相机识别进入注册。", 
+                "麻烦点一下助力，开发不易 ❤️", 
+                "目前支持自动签到，每日阅读、分享任务", 
+                "<br />", 
                 "ps: 可以用几个微信弄多个账号，但需要手机号"
             ]
-        },
+        }, 
         {
-            "id": "hzh",
-            "name": "华住会",
+            "id": "hzh", 
+            "name": "华住会", 
             "keys": [
-                "@hzh.evil_hzhCookie",
-                "@hzh.evil_hzhUserToken",
+                "@hzh.evil_hzhCookie", 
+                "@hzh.evil_hzhUserToken", 
                 "@hzh.evil_hzhUserAgent"
-            ],
-            "author": "@evilbutcher",
+            ], 
+            "author": "@evilbutcher", 
             "settings": [
                 {
-                    "id": "@hzh.evil_hzhCookie",
-                    "name": "hzhCookie",
-                    "type": "text",
+                    "id": "@hzh.evil_hzhCookie", 
+                    "name": "hzhCookie", 
+                    "type": "text", 
                     "desc": "华住会cookie"
-                },
+                }, 
                 {
-                    "id": "@hzh.evil_hzhUserToken",
-                    "name": "hzhUserToken",
-                    "type": "text",
+                    "id": "@hzh.evil_hzhUserToken", 
+                    "name": "hzhUserToken", 
+                    "type": "text", 
                     "desc": "华住会hzhUserToken"
-                },
+                }, 
                 {
-                    "id": "@hzh.evil_hzhUserAgent",
-                    "name": "hzhUserAgent",
-                    "type": "text",
+                    "id": "@hzh.evil_hzhUserAgent", 
+                    "name": "hzhUserAgent", 
+                    "type": "text", 
                     "desc": "华住会hzhUserAgent"
                 }
-            ],
+            ], 
             "icons": [
-                "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png",
+                "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png", 
                 "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh.png"
             ]
-        },
+        }, 
         {
-            "id": "v.qq.com",
-            "name": "腾讯视频",
-            "author": "@MartinsKing",
+            "id": "v.qq.com", 
+            "name": "腾讯视频", 
+            "author": "@MartinsKing", 
             "icons": [
-                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/videoqq.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/videoqq.png", 
                 "https://raw.githubusercontent.com/Orz-3/mini/master/Color/videoqq.png"
-            ],
+            ], 
             "keys": [
-                "videoqq_pc_cookie",
-                "videoqq_ref_url",
+                "videoqq_pc_cookie", 
+                "videoqq_ref_url", 
                 "videoqq_cookie"
-            ],
+            ], 
             "settings": [
                 {
-                    "id": "videoqq_pc_cookie",
-                    "name": "pc_cookie",
-                    "type": "text",
+                    "id": "videoqq_pc_cookie", 
+                    "name": "pc_cookie", 
+                    "type": "text", 
                     "desc": "腾讯视频网页版cookie"
-                },
+                }, 
                 {
-                    "id": "videoqq_ref_url",
-                    "name": "ref_url",
-                    "type": "text",
+                    "id": "videoqq_ref_url", 
+                    "name": "ref_url", 
+                    "type": "text", 
                     "desc": "腾讯视频Request URL"
-                },
+                }, 
                 {
-                    "id": "videoqq_cookie",
-                    "name": "cookie",
-                    "type": "text",
+                    "id": "videoqq_cookie", 
+                    "name": "cookie", 
+                    "type": "text", 
                     "desc": "腾讯视频app cookie"
                 }
             ]
-        },
-            {
-      "id": "qidian",
-      "name": "起点读书",
-      "keys": [
-        "qd_session",
-        "qd_session_2",
-        "qd_taskId",
-        "qd_taskId_2",
-        "qd_timeout"
-      ],
-      "desc": "",
-      "settings": [
+        }, 
         {
-          "id": "qd_session",
-          "name": "qd_session",
-          "val": "",
-          "type": "text",
-          "placeholder": "",
-          "desc": ""
-        },
-        {
-          "id": "qd_session_2",
-          "name": "qd_session_2",
-          "val": "",
-          "type": "text",
-          "placeholder": "",
-          "desc": ""
-        },
-        {
-          "id": "qd_taskId",
-          "name": "qd_taskId",
-          "val": "",
-          "type": "text",
-          "placeholder": "",
-          "desc": ""
-        },
-        {
-          "id": "qd_taskId_2",
-          "name": "qd_taskId_2",
-          "val": "",
-          "type": "text",
-          "placeholder": "",
-          "desc": ""
-        },
-        {
-          "id": "qd_timeout",
-          "name": "间隔时间",
-          "val": 20,
-          "type": "number",
-          "placeholder": "",
-          "desc": "默认间隔20s"
-        }
-      ],
-      "script": "https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/qidian.js",
-      "author": "@mcdasheng",
-      "repo": "https://github.com/mcdasheng",
-      "icons": [
-        "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/qidian.png",
-        "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/qidian.png"
-      ]
-    },
-        {
-            "id": "ysf",
-            "name": "云闪付",
+            "id": "qidian", 
+            "name": "起点读书", 
             "keys": [
-                "unipay_cookieKey",
-                "unipay_authorizationKey",
-                "unipay_userAgentKey"
-            ],
+                "qd_session", 
+                "qd_session_2", 
+                "qd_taskId", 
+                "qd_taskId_2", 
+                "qd_timeout"
+            ], 
+            "desc": "", 
             "settings": [
                 {
-                    "id": "unipay_cookieKey",
-                    "name": "cookieKey",
-                    "type": "text",
+                    "id": "qd_session", 
+                    "name": "qd_session", 
+                    "val": "", 
+                    "type": "text", 
+                    "placeholder": "", 
+                    "desc": ""
+                }, 
+                {
+                    "id": "qd_session_2", 
+                    "name": "qd_session_2", 
+                    "val": "", 
+                    "type": "text", 
+                    "placeholder": "", 
+                    "desc": ""
+                }, 
+                {
+                    "id": "qd_taskId", 
+                    "name": "qd_taskId", 
+                    "val": "", 
+                    "type": "text", 
+                    "placeholder": "", 
+                    "desc": ""
+                }, 
+                {
+                    "id": "qd_taskId_2", 
+                    "name": "qd_taskId_2", 
+                    "val": "", 
+                    "type": "text", 
+                    "placeholder": "", 
+                    "desc": ""
+                }, 
+                {
+                    "id": "qd_timeout", 
+                    "name": "间隔时间", 
+                    "val": 20, 
+                    "type": "number", 
+                    "placeholder": "", 
+                    "desc": "默认间隔20s"
+                }
+            ], 
+            "script": "https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/qidian.js", 
+            "author": "@mcdasheng", 
+            "repo": "https://github.com/mcdasheng", 
+            "icons": [
+                "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/qidian.png", 
+                "https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/qidian.png"
+            ]
+        }, 
+        {
+            "id": "ysf", 
+            "name": "云闪付", 
+            "keys": [
+                "unipay_cookieKey", 
+                "unipay_authorizationKey", 
+                "unipay_userAgentKey"
+            ], 
+            "settings": [
+                {
+                    "id": "unipay_cookieKey", 
+                    "name": "cookieKey", 
+                    "type": "text", 
                     "desc": "云闪付cookie"
-                },
+                }, 
                 {
-                    "id": "unipay_authorizationKey",
-                    "name": "authorizationKey",
-                    "type": "text",
+                    "id": "unipay_authorizationKey", 
+                    "name": "authorizationKey", 
+                    "type": "text", 
                     "desc": "云闪付authorizationKey"
-                },
+                }, 
                 {
-                    "id": "unipay_userAgentKey",
-                    "name": "userAgentKey",
-                    "type": "text",
+                    "id": "unipay_userAgentKey", 
+                    "name": "userAgentKey", 
+                    "type": "text", 
                     "desc": "云闪付userAgentKey"
                 }
-            ],
+            ], 
             "icons": [
-                "https://raw.githubusercontent.com/lcmigg/Surge/master/img/unionpay.png",
+                "https://raw.githubusercontent.com/lcmigg/Surge/master/img/unionpay.png", 
                 "https://raw.githubusercontent.com/lcmigg/Surge/master/img/unionpay.png"
             ]
-        },
-    {
-      "id": "wechat_pay_coupon",
-      "name": "微信支付有优惠",
-      "author": "@FoKit",
-      "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js",
-      "repo": "",
-      "icons": [
-        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png",
-        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
-      ],
-      "descs_html": ["微信支付有优惠 - 领金币"],
-      "keys": ["wechat_pay_token", "wechat_pay_version", "wechat_pay_exchange"],
-      "settings": [
+        }, 
         {
-          "id": "wechat_pay_token",
-          "name": "用户信息",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": ""
-        },
+            "id": "wechat_pay_coupon", 
+            "name": "微信支付有优惠", 
+            "author": "@FoKit", 
+            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js", 
+            "repo": "", 
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png", 
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
+            ], 
+            "descs_html": [
+                "微信支付有优惠 - 领金币"
+            ], 
+            "keys": [
+                "wechat_pay_token", 
+                "wechat_pay_version", 
+                "wechat_pay_exchange"
+            ], 
+            "settings": [
+                {
+                    "id": "wechat_pay_token", 
+                    "name": "用户信息", 
+                    "val": "", 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": ""
+                }, 
+                {
+                    "id": "wechat_pay_version", 
+                    "name": "版本号", 
+                    "val": "", 
+                    "type": "text", 
+                    "desc": ""
+                }, 
+                {
+                    "id": "wechat_pay_exchange", 
+                    "name": "兑换好礼", 
+                    "val": false, 
+                    "type": "boolean", 
+                    "desc": "每日使用1积分兑换好礼, 获得补贴金"
+                }
+            ]
+        }, 
         {
-          "id": "wechat_pay_version",
-          "name": "版本号",
-          "val": "",
-          "type": "text",
-          "desc": ""
-        },
+            "id": "WpsApp", 
+            "name": "WPS VIP", 
+            "keys": [
+                "WpsVipYear", 
+                "WpsVipMonth", 
+                "WpsVipDay", 
+                "WpsCloudSpace"
+            ], 
+            "descs_html": [
+                "<h4 align=\"center\">脚本配置请查看<a href=\"https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoWps.js\">脚本注释</a></h4>"
+            ], 
+            "settings": [
+                {
+                    "id": "WpsVipYear", 
+                    "name": "vip过期时间 - 年份", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "vip过期时间-年份 如：2023"
+                }, 
+                {
+                    "id": "WpsVipMonth", 
+                    "name": "vip过期时间 - 月份", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "vip过期时间-月份 如：10"
+                }, 
+                {
+                    "id": "WpsVipDay", 
+                    "name": "vip过期时间 - 日期", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "vip过期时间-日期 如：10"
+                }, 
+                {
+                    "id": "WpsCloudSpace", 
+                    "name": "云空间总量 - 大小", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "云空间总量 GB"
+                }
+            ], 
+            "author": "@XiaoMao", 
+            "repo": "https://github.com/xiaomaoJT/QxScript", 
+            "icons": [
+                "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png", 
+                "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png"
+            ], 
+            "script": "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoWps.js"
+        }, 
         {
-          "id": "wechat_pay_exchange",
-          "name": "兑换好礼",
-          "val": false,
-          "type": "boolean",
-          "desc": "每日使用1积分兑换好礼, 获得补贴金"
+            "id": "ScanningAlmightyApp", 
+            "name": "全能扫描王VIP", 
+            "keys": [
+                "ScanningAlmightyVipYear", 
+                "ScanningAlmightyVipMonth", 
+                "ScanningAlmightyVipDay", 
+                "ScanningAlmightySuper"
+            ], 
+            "descs_html": [
+                "<h4 align=\"center\">脚本配置请查看<a href=\"https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoScanningAlmighty.js\">脚本注释</a></h4>"
+            ], 
+            "settings": [
+                {
+                    "id": "ScanningAlmightyVipYear", 
+                    "name": "vip过期时间 - 年份", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "vip过期时间-年份 如：2023"
+                }, 
+                {
+                    "id": "ScanningAlmightyVipMonth", 
+                    "name": "vip过期时间 - 月份", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "vip过期时间-月份 如：10"
+                }, 
+                {
+                    "id": "ScanningAlmightyVipDay", 
+                    "name": "vip过期时间 - 日期", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "vip过期时间-日期 如：10"
+                }, 
+                {
+                    "id": "ScanningAlmightySuper", 
+                    "name": "是否开启至尊", 
+                    "val": null, 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "0 为不开启；1 为开启"
+                }
+            ], 
+            "author": "@XiaoMao", 
+            "repo": "https://github.com/xiaomaoJT/QxScript", 
+            "icons": [
+                "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png", 
+                "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png"
+            ], 
+            "script": "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoScanningAlmighty.js"
+        }, 
+        {
+            "id": "tuhu", 
+            "name": "途虎养车", 
+            "author": "@FoKit", 
+            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js", 
+            "repo": "", 
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png", 
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png"
+            ], 
+            "descs_html": [
+                "途虎养车签到"
+            ], 
+            "keys": [
+                "tuhu_token", 
+                "tuhu_blackbox"
+            ], 
+            "settings": [
+                {
+                    "id": "tuhu_token", 
+                    "name": "Token", 
+                    "val": "", 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "rows": 1, 
+                    "desc": "活动 Token, 以数组字符串形式保存"
+                }, 
+                {
+                    "id": "tuhu_blackbox", 
+                    "name": "Blackbox", 
+                    "val": "", 
+                    "type": "text", 
+                    "desc": ""
+                }
+            ]
+        }, 
+        {
+            "id": "sliverkiss_mxbc", 
+            "name": "蜜雪冰城", 
+            "author": "@Sliverkiss", 
+            "repo": "", 
+            "icons": [
+                "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png", 
+                "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
+            ], 
+            "keys": [
+                "mxbc_data"
+            ], 
+            "settings": [
+                {
+                    "id": "mxbc_data", 
+                    "name": "会员Cookie数据", 
+                    "val": "", 
+                    "type": "textarea", 
+                    "autoGrow": true, 
+                    "desc": "会员Cookie数据"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "id": "WpsApp",
-      "name": "WPS VIP",
-      "keys": [
-        "WpsVipYear",
-        "WpsVipMonth",
-        "WpsVipDay",
-        "WpsCloudSpace"
-      ],
-      "descs_html": [
-        "<h4 align=\"center\">脚本配置请查看<a href=\"https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoWps.js\">脚本注释</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "WpsVipYear",
-          "name": "vip过期时间 - 年份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-年份 如：2023"
-        },
-        {
-          "id": "WpsVipMonth",
-          "name": "vip过期时间 - 月份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-月份 如：10"
-        },
-        {
-          "id": "WpsVipDay",
-          "name": "vip过期时间 - 日期",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-日期 如：10"
-        },
-        {
-          "id": "WpsCloudSpace",
-          "name": "云空间总量 - 大小",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "云空间总量 GB"
-        }
-      ],
-      "author": "@XiaoMao",
-      "repo": "https://github.com/xiaomaoJT/QxScript",
-      "icons": [
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png",
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png"
-      ],
-      "script": "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoWps.js"
-    },
-    {
-      "id": "ScanningAlmightyApp",
-      "name": "全能扫描王VIP",
-      "keys": [
-        "ScanningAlmightyVipYear",
-        "ScanningAlmightyVipMonth",
-        "ScanningAlmightyVipDay",
-        "ScanningAlmightySuper"
-      ],
-      "descs_html": [
-        "<h4 align=\"center\">脚本配置请查看<a href=\"https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoScanningAlmighty.js\">脚本注释</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "ScanningAlmightyVipYear",
-          "name": "vip过期时间 - 年份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-年份 如：2023"
-        },
-        {
-          "id": "ScanningAlmightyVipMonth",
-          "name": "vip过期时间 - 月份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-月份 如：10"
-        },
-        {
-          "id": "ScanningAlmightyVipDay",
-          "name": "vip过期时间 - 日期",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-日期 如：10"
-        },
-        {
-          "id": "ScanningAlmightySuper",
-          "name": "是否开启至尊",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "0 为不开启；1 为开启"
-        }
-      ],
-      "author": "@XiaoMao",
-      "repo": "https://github.com/xiaomaoJT/QxScript",
-      "icons": [
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png",
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png"
-      ],
-      "script": "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoScanningAlmighty.js"
-    },
-    {
-      "id": "tuhu",
-      "name": "途虎养车",
-      "author": "@FoKit",
-      "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js",
-      "repo": "",
-      "icons": [
-        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png",
-        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png"
-      ],
-      "descs_html": ["途虎养车签到"],
-      "keys": ["tuhu_token", "tuhu_blackbox"],
-      "settings": [
-        {
-          "id": "tuhu_token",
-          "name": "Token",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "活动 Token, 以数组字符串形式保存"
-        },
-        {
-          "id": "tuhu_blackbox",
-          "name": "Blackbox",
-          "val": "",
-          "type": "text",
-          "desc": ""
-        },
-        
-      ]
-    },
-    {
-        "id": "sliverkiss_mxbc",
-        "name": "蜜雪冰城",
-        "author": "@Sliverkiss",
-        "repo": "",
-        "icons": [
-          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png",
-          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
-        ],
-        "keys": ["mxbc_data"],
-        "settings": [
-          {
-            "id": "mxbc_data",
-            "name": "会员Cookie数据",
-            "val": "",
-            "type": "textarea",
-            "autoGrow": true,
-            "desc": "会员Cookie数据"
-          }
-        ]
-      }
     ]
 }
