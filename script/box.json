@@ -672,6 +672,59 @@
         "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png"
       ],
       "script": "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoScanningAlmighty.js"
-    }
+    },
+    {
+      "id": "tuhu",
+      "name": "途虎养车",
+      "author": "@FoKit",
+      "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js",
+      "repo": "",
+      "icons": [
+        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png",
+        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png"
+      ],
+      "descs_html": ["途虎养车签到"],
+      "keys": ["tuhu_token", "tuhu_blackbox"],
+      "settings": [
+        {
+          "id": "tuhu_token",
+          "name": "Token",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "活动 Token, 以数组字符串形式保存"
+        },
+        {
+          "id": "tuhu_blackbox",
+          "name": "Blackbox",
+          "val": "",
+          "type": "text",
+          "desc": ""
+        },
+        
+      ]
+    },
+    {
+        "id": "sliverkiss_mxbc",
+        "name": "蜜雪冰城",
+        "author": "@Sliverkiss",
+        "repo": "",
+        "icons": [
+          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png",
+          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
+        ],
+        "keys": ["mxbc_data"],
+        "settings": [
+          {
+            "id": "mxbc_data",
+            "name": "会员Cookie数据",
+            "val": "",
+            "type": "textarea",
+            "autoGrow": true,
+            "desc": "会员Cookie数据"
+          }
+        ]
+      }
     ]
 }
