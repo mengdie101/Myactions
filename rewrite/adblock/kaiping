@@ -13,7 +13,7 @@
 #############################################
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, newclient.map.baidu.com, gw.alicdn.com, img.alicdn.com, mobile.cebbank.com, yghsh.cebbank.com, v.icbc.com.cn, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, is.snssdk.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn, creditcard.bankcomm.com, lban.spdb.com.cn, wap.spdb.com.cn, us.l.qq.com, y.gtimg.cn, haojia-api.smzdm.com, app-api.smzdm.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, vv.video.qq.com, ccmsupport-sz.tenpay.com, btrace.qq.com, api2.helper.qq.com, *.beacon.qq.com, lives.l.qq.com, imgcache.qq.com, mtteve.beacon.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, 3gimg.qq.com, splashqqlive.gtimg.com, qzonestyle.gtimg.cn, discuz.gtimg.cn, bla.gtimg.com, mmgr.gtimg.com, bk.bingo.qq.com, ios.wps.cn, mobile-pic.cache.iciba.com, mp.weixin.qq.com, api-mifit-cn2.huami.com, d.psbc.com, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn, client.app.coc.10086.cn, m.client.10010.com, amemv.com, musical.com, snssdk.com, tiktokv.com, dsp.toutiao.com, app-izz.zhengzhou.gov.cn
+hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, 80.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com, gw.alicdn.com, img.alicdn.com, mobile.cebbank.com, yghsh.cebbank.com, v.icbc.com.cn, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, is.snssdk.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn, creditcard.bankcomm.com, lban.spdb.com.cn, wap.spdb.com.cn, us.l.qq.com, y.gtimg.cn, haojia-api.smzdm.com, app-api.smzdm.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, vv.video.qq.com, ccmsupport-sz.tenpay.com, btrace.qq.com, api2.helper.qq.com, *.beacon.qq.com, lives.l.qq.com, imgcache.qq.com, mtteve.beacon.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, 3gimg.qq.com, splashqqlive.gtimg.com, qzonestyle.gtimg.cn, discuz.gtimg.cn, bla.gtimg.com, mmgr.gtimg.com, bk.bingo.qq.com, ios.wps.cn, mobile-pic.cache.iciba.com, mp.weixin.qq.com, api-mifit-cn2.huami.com, d.psbc.com, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn, client.app.coc.10086.cn, m.client.10010.com, amemv.com, musical.com, snssdk.com, tiktokv.com, dsp.toutiao.com, app-izz.zhengzhou.gov.cn
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -68,8 +68,21 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? url reject
 
 # > 百度地图
-# hostname = newclient.map.baidu.com
+hostname=180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
+# > 百度地图_首页底部推荐@ddgksf2013
+^https?:\/\/ugc\.map\.baidu\.com\/govui\/rich_content.*homepage url reject-200
+# > 百度地图_搜索框下足记Tips@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc(?!.*map_city_id) url reject-200
+# > 百度地图_搜索推广@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw url reject-200
+# > 百度地图_开屏广告|首页左上角广告@ddgksf2013
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?.*qt=ads url reject-200
+# > 百度地图_DNS处理@ddgksf2013
+^https?:\/\/httpdns\.baidubce\.com url reject-200
+# > 百度地图_各种商业推广@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/crossmarketing url reject-200
+# > 百度地图_我的页面地图动态@ddgksf2013
+^https?:\/\/newclient\.map\.baidu\.com\/client\/usersystem\/home\/dynamic url reject-200
 
 
 # >>>>>>>>>>>>>>> ✅ C ✅ <<<<<<<<<<<<<<
