@@ -68,7 +68,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? url reject
 
 # > 百度地图
-hostname=180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
+# hostname=180.76.76.200, newclient.map.baidu.com, httpdns.baidubce.com, ugc.map.baidu.com
 # > 百度地图_首页底部推荐@ddgksf2013
 ^https?:\/\/ugc\.map\.baidu\.com\/govui\/rich_content.*homepage url reject-200
 # > 百度地图_搜索框下足记Tips@ddgksf2013
