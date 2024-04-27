@@ -461,8 +461,7 @@
             "icons": [
                 "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png", 
                 "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png"
-            ], 
-            "script": "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoWps.js"
+            ]
         }, 
         {
             "id": "ScanningAlmightyApp", 
@@ -519,8 +518,7 @@
             "icons": [
                 "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png", 
                 "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png"
-            ], 
-            "script": "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoScanningAlmighty.js"
+            ]
         }, 
         {
             "id": "tuhu", 
