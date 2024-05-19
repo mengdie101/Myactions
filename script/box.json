@@ -362,58 +362,58 @@
                 "https://raw.githubusercontent.com/lcmigg/Surge/master/img/unionpay.png"
             ]
         }, 
-        {
-            "id": "wechat_pay_coupon", 
-            "name": "微信支付有优惠", 
-            "author": "@FoKit", 
-            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js", 
-            "repo": "", 
-            "icons": [
-                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png", 
-                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
-            ], 
-            "descs_html": [
-                "微信支付有优惠 - 领金币"
-            ], 
-            "keys": [
-        "wechat_pay_token",
-        "wechat_pay_version",
-        "wechat_pay_exchange",
+       {
+    "id": "wechat_pay_coupon", 
+    "name": "微信支付有优惠", 
+    "author": "@FoKit", 
+    "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js", 
+    "repo": "", 
+    "icons": [
+        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png", 
+        "https://raw.githubusercontent.com/FoKit/Scripts/main/images/wechat_pay_coupon.png"
+    ], 
+    "descs_html": [
+        "微信支付有优惠 - 领金币"
+    ], 
+    "keys": [
+        "wechat_pay_token", 
+        "wechat_pay_version", 
+        "wechat_pay_exchange", 
         "wechat_pay_exchange_award"
-            ],
-            "settings": [
-                {
-                    "id": "wechat_pay_token", 
-                    "name": "用户信息", 
-                    "val": "", 
-                    "type": "textarea", 
-                    "autoGrow": true, 
-                    "rows": 1, 
-                    "desc": ""
-                }, 
-                {
-                    "id": "wechat_pay_version", 
-                    "name": "版本号", 
-                    "val": "", 
-                    "type": "text", 
-                    "desc": ""
-                }, 
-                {
-                    "id": "wechat_pay_exchange", 
-                    "name": "兑换好礼", 
-                    "val": false, 
-                    "type": "boolean", 
-                    "desc": "兑换立减金"
-        },
+    ], 
+    "settings": [
         {
-          "id": "wechat_pay_exchange_award",
-          "name": "兑换信息",
-          "val": false,
-          "type": "boolean",
-          "desc": ""
-                }
-            ]
+            "id": "wechat_pay_token", 
+            "name": "用户信息", 
+            "val": "", 
+            "type": "textarea", 
+            "autoGrow": true, 
+            "rows": 1, 
+            "desc": ""
         }, 
+        {
+            "id": "wechat_pay_version", 
+            "name": "版本号", 
+            "val": "", 
+            "type": "text", 
+            "desc": ""
+        }, 
+        {
+            "id": "wechat_pay_exchange", 
+            "name": "兑换好礼", 
+            "val": false, 
+            "type": "boolean", 
+            "desc": "兑换立减金"
+        }, 
+        {
+            "id": "wechat_pay_exchange_award", 
+            "name": "兑换信息", 
+            "val": false, 
+            "type": "boolean", 
+            "desc": ""
+        }
+    ]
+},
         {
             "id": "WpsApp", 
             "name": "WPS VIP", 
