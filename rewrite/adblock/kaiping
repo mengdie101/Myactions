@@ -285,7 +285,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ;^https?:\/\/static.psbc.com:8090\/mbank_f\/images\/[0-9]+\.png url reject-200
 ;^https?:\/\/mcc.psbc.com:9090\/mcc\/resources\/[0-9]+\.(jpg|png|jpeg) url reject-200
 # 邮储信用卡
-^https?:\/\/d.psbc.com:9091\/mcc\/resources\/group10x1bM000x1b000x1b740x1bFs0gD url reject-200
+^https?:\/\/d.psbc.com:9091\/mcc\/resources\/group10x1bM000x1b000x1b740x1bFs0gDWZoH url reject-200
 
 
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
