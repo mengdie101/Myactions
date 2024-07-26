@@ -302,7 +302,6 @@ host, ads.youtube.com, reject
 
 # >>>>>>>>>>>>>>> ✅ J ✅ <<<<<<<<<<<<<<
 # > 今日头条
-host, dm.toutiao.com, reject
 host-keyword, ad.toutiao.com, reject
 host-keyword, clk.gentags.net, reject
 host-keyword, dm.toutiao.com, reject
