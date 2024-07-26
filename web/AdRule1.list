@@ -307,7 +307,8 @@ host-keyword, clk.gentags.net, reject
 host-keyword, dm.toutiao.com, reject
 host-keyword, dm.pstatp.com, reject
 host-keyword, dm.bytedance.com, reject
-host-keyword, uop.umeng.com, reject
+host-keyword, umeng.com, reject
+host-keyword, umengcloud.com, reject
 host-keyword, m.suning.com, reject
 host-keyword, adshare.toutiao.com, reject
 host-keyword, tunion-api.m.taobao.com, reject
@@ -410,9 +411,6 @@ host, adashxgc.ut.taobao.com, REJECT
 host, analytics-api.smzdm.com, REJECT
 host, baichuan-sdk.alicdn.com, REJECT
 host, dgstatic.jd.com, REJECT
-host, msg.umengcloud.com, REJECT
-host, sec.umeng.com, REJECT
-host, ulogs.umeng.com, REJECT
 host, ynuf.aliapp.org, REJECT
 
 
