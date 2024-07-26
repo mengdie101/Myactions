@@ -317,7 +317,6 @@ host-keyword, s3.pstatp.com, reject
 host-keyword, a3.pstatp.com, reject
 host-keyword, a3.bytecdn.cn, reject
 ;host-keyword, ichannel.snssdk.com, reject
-host, ad.toutiao.com, reject
 host, dsp.toutiao.com, reject
 
 # > 京东
