@@ -71,7 +71,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 # > 百度地图_首页底部推荐@ddgksf2013
 ^https?:\/\/ugc\.map\.baidu\.com\/govui\/rich_content.*homepage url reject-200
 # > 百度地图_搜索框下足记Tips@ddgksf2013
-;^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc(?!.*map_city_id) url reject-200
+^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=rgc(?!.*map_city_id)(?!.*city_id_pin) url reject-200
 # > 百度地图_搜索推广@ddgksf2013
 ^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui.*qt=hw url reject-200
 # > 百度地图_开屏广告|首页左上角广告@ddgksf2013
