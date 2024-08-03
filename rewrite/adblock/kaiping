@@ -216,7 +216,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
 # 邮储信用卡
 # hostname = d.psbc.com
-^https?:\/\/d.psbc.com:9091\/mcc\/resources\/group10x1bM000x1b000x1b740x1bFs0gD url reject-200
+^https?:\/\/d.psbc.com:9091\/mcc\/resources\/group10x1bM000x1b000x1b7.*0x1bFs0gD url reject-200
 
 
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
