@@ -1,0 +1,16 @@
+/*************************************
+
+项目名称：扫描全能王
+
+**************************************
+
+[rewrite_local]
+
+^https:\/\/api-cs.intsig.net\/purchase\/cs/query_property url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+^https:\/\/v3.camscanner.com\/app\/(queryProperty|getPrivilegeItem) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js
+
+[mitm]
+
+hostname = v3.camscanner.com, api-cs.intsig.net
+
+*************************************/
