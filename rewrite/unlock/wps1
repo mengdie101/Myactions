@@ -6,7 +6,7 @@
 ^https:\/\/drive\.wps\.cn\/api\/v3\/userinfo url script-response-body WPS.js
 ^https:\/\/vip\.wps\.cn\/v2\/vip_center\/my\/privilege url script-response-body WPS.js
 ^https:\/\/tiance\.wps\.cn\/dce\/exec\/api\/market\/activity url script-response-body WPS.js
-^https:\/\/account\.wps\.cn\/api\/v3\/mine\/vips url script-response-body WPS.js
+^https:\/\/account\.wps\.cn\/api\/v3\/mine url script-response-body WPS.js
 [mitm]
 hostname = vas.wps.cn, account.wps.cn, drive.wps.cn, vip.wps.cn, tiance.wps.cn
 *************************************/
