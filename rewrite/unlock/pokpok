@@ -1,0 +1,13 @@
+/*************************************
+
+项目名称：pokpok
+
+**************************************
+
+[rewrite_local]
+^https:\/\/playpokpok.com\/backstage\/verify\/receipt\.php url script-response-body pokpok.js
+
+[mitm]
+hostname = playpokpok.com
+
+*************************************/
