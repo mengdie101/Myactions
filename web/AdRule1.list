@@ -572,7 +572,7 @@ host, bootpreload.uve.weibo.com
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
 # > 云闪付
-host, ads.cup.com.cn, reject
+#host, ads.cup.com.cn, reject
 host, ads.95516.com, reject
 host, sdk.open.talk.getui.net, reject
 ;host, switch.cup.com.cn, reject
