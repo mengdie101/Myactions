@@ -6,43 +6,37 @@
   "repo": "https://github.com/mengdie101/Myactions",
   "apps": [
     {
-      "id": "sf",
+      "id": "SF",
       "name": "SF",
-      "author": "@Sliverkiss",
-      "repo": "",
-      "icons": [
-        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png",
-        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
-      ],
       "keys": [
         "chavy_login_sfexpress",
         "sfsyBee",
         "fmz200_sf_bee"
       ],
+      "author": "",
       "settings": [
         {
           "id": "chavy_login_sfexpress",
-          "name": "会员Cookie数据",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "desc": "会员Cookie数据"
+          "name": "Cookie",
+          "type": "text",
+          "desc": "cookie"
         },
-                {
+        {
           "id": "sfsyBee",
-          "name": "会员Cookie数据",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "desc": "会员Cookie数据"
-        },        {
+          "name": "Cookie",
+          "type": "text",
+          "desc": "cookie"
+        },
+        {
           "id": "fmz200_sf_bee",
-          "name": "会员Cookie数据",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "desc": "会员Cookie数据"
+          "name": "Cookie",
+          "type": "text",
+          "desc": "cookie"
         }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png",
+        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
       ]
     }
   ]
