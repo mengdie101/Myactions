@@ -1,42 +1,35 @@
 {
   "id": "mengdie101.app.sub",
-  "name": "自用应用订阅CES",
+  "name": "自用测试",
   "author": "@mengdie101",
   "icon": "https://raw.githubusercontent.com/mengdie101/Myactions/master/icon/IMG_2350.gif",
   "repo": "https://github.com/mengdie101/Myactions",
   "apps": [
     {
-      "id": "SF",
-      "name": "SF",
+      "id": "ceshi",
+      "name": "测试",
       "keys": [
-        "chavy_login_sfexpress",
-        "sfsyBee",
-        "fmz200_sf_bee"
+        "key1",
+        "key2"
       ],
       "author": "",
       "settings": [
         {
-          "id": "chavy_login_sfexpress",
+          "id": "key1",
           "name": "Cookie",
           "type": "text",
           "desc": "cookie"
         },
         {
-          "id": "sfsyBee",
-          "name": "Cookie",
-          "type": "text",
-          "desc": "cookie"
-        },
-        {
-          "id": "fmz200_sf_bee",
+          "id": "key2",
           "name": "Cookie",
           "type": "text",
           "desc": "cookie"
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png",
-        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png"
       ]
     }
   ]
