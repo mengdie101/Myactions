@@ -415,124 +415,111 @@
       ]
     },
     {
-      "id": "WpsApp",
-      "name": "WPS VIP",
-      "keys": [
-        "WpsVipYear",
-        "WpsVipMonth",
-        "WpsVipDay",
-        "WpsCloudSpace"
+        "id": "sliverkiss_hldc",
+        "name": "哈罗单车",
+        "author": "@Sliverkiss",
+        "repo": "",
+        "icons": [
+          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hldc.png",
+          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hldc.png"
+        ],
+        "keys": ["hldc_data"],
+        "settings": [
+          {
+            "id": "hldc_data",
+            "name": "会员Cookie数据",
+            "val": "",
+            "type": "textarea",
+            "autoGrow": true,
+            "desc": "会员Cookie数据"
+          }
+        ]
+      },
+        {
+        "id": "gaodeditu",
+        "name": "高德地图",
+        "author": "@wf021325",
+        "repo": "",
+        "icons": [
+          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Gddt.png",
+          "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Gddt.png"
+        ],
+        "keys": ["GD_Val"],
+        "settings": [
+          {
+            "id": "GD_Val",
+            "name": "Cookie数据",
+            "val": "",
+            "type": "textarea",
+            "autoGrow": true,
+            "desc": "Cookie数据"
+          }
+        ]
+      },
+        {
+      "id": "lkAliYunPanCheckIn",
+      "name": "阿里云盘签到",
+      "desc_html": "⚠️使用说明</br>详情【<a href='https://github.com/lowking/Scripts/blob/master/ali/aliYunPanCheckIn.js?raw=true'><font class='red--text'>点我查看</font></a>】",
+      "icons": [
+        "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPana.png",
+        "https://raw.githubusercontent.com/lowking/Scripts/master/doc/icon/aliYunPan.png"
       ],
-      "descs_html": [
-        "<h4 align=\"center\">脚本配置请查看<a href=\"https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoWps.js\">脚本注释</a></h4>"
+      "keys": [
+        "lkAliYunPanTokenKey",
+        "lkAliYunPanRefreshTokenKey"
       ],
       "settings": [
         {
-          "id": "WpsVipYear",
-          "name": "vip过期时间 - 年份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-年份 如：2023"
+          "id": "lkIsEnableLogAliYunPanCheckIn",
+          "name": "开启/关闭日志",
+          "val": true,
+          "type": "boolean",
+          "desc": "默认开启"
         },
         {
-          "id": "WpsVipMonth",
-          "name": "vip过期时间 - 月份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-月份 如：10"
+          "id": "lkNotifyOnlyFailAliYunPanCheckIn",
+          "name": "只当执行失败才通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认关闭"
         },
         {
-          "id": "WpsVipDay",
-          "name": "vip过期时间 - 日期",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-日期 如：10"
+          "id": "lkIsEnableTgNotifyAliYunPanCheckIn",
+          "name": "开启/关闭Telegram通知",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认关闭"
         },
         {
-          "id": "WpsCloudSpace",
-          "name": "云空间总量 - 大小",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "云空间总量 GB"
+          "id": "lkTgNotifyUrlAliYunPanCheckIn",
+          "name": "Telegram通知地址",
+          "val": "",
+          "type": "text",
+          "desc": "Tg的通知地址，如：https://api.telegram.org/bot-token/sendMessage?chat_id=-100140&parse_mode=Markdown&text="
+        },
+        {
+          "id": "lkAliYunPanTokenKey",
+          "name": "阿里云盘token",
+          "val": "",
+          "type": "text",
+          "desc": "阿里云盘token"
+        },
+        {
+          "id": "lkAliYunPanRefreshTokenKey",
+          "name": "阿里云盘refresh_token",
+          "val": "",
+          "type": "text",
+          "desc": "阿里云盘refresh_token"
         }
       ],
-      "author": "@XiaoMao",
-      "repo": "https://github.com/xiaomaoJT/QxScript",
-      "icons": [
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png",
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/wps.png"
-      ]
-    },
-    {
-      "id": "ScanningAlmightyApp",
-      "name": "全能扫描王VIP",
-      "keys": [
-        "ScanningAlmightyVipYear",
-        "ScanningAlmightyVipMonth",
-        "ScanningAlmightyVipDay",
-        "ScanningAlmightySuper"
-      ],
-      "descs_html": [
-        "<h4 align=\"center\">脚本配置请查看<a href=\"https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoScanningAlmighty.js\">脚本注释</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "ScanningAlmightyVipYear",
-          "name": "vip过期时间 - 年份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-年份 如：2023"
-        },
-        {
-          "id": "ScanningAlmightyVipMonth",
-          "name": "vip过期时间 - 月份",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-月份 如：10"
-        },
-        {
-          "id": "ScanningAlmightyVipDay",
-          "name": "vip过期时间 - 日期",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "vip过期时间-日期 如：10"
-        },
-        {
-          "id": "ScanningAlmightySuper",
-          "name": "是否开启至尊",
-          "val": null,
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 1,
-          "desc": "0 为不开启；1 为开启"
-        }
-      ],
-      "author": "@XiaoMao",
-      "repo": "https://github.com/xiaomaoJT/QxScript",
-      "icons": [
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png",
-        "https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/icon/scan.png"
-      ]
+      "author": "@lowking",
+      "repo": "https://github.com/lowking/Scripts",
+      "script": "https://github.com/lowking/Scripts/blob/master/ali/aliYunPanCheckIn.js?raw=true"
     },
     {
       "id": "tuhu",
       "name": "途虎养车",
-      "author": "@FoKit",
-      "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/tuhu.js",
+      "author": "@Crazy-Z7",
       "repo": "",
       "icons": [
         "https://raw.githubusercontent.com/FoKit/Scripts/main/images/tuhu.png",
@@ -542,24 +529,15 @@
         "途虎养车签到"
       ],
       "keys": [
-        "tuhu_token",
-        "tuhu_blackbox"
+        "TU_usersignKeyTU"
       ],
       "settings": [
         {
-          "id": "tuhu_token",
-          "name": "Token",
+          "id": "TU_usersignKeyTU",
+          "name": "Cookie",
           "val": "",
           "type": "textarea",
           "autoGrow": true,
-          "rows": 1,
-          "desc": "活动 Token, 以数组字符串形式保存"
-        },
-        {
-          "id": "tuhu_blackbox",
-          "name": "Blackbox",
-          "val": "",
-          "type": "text",
           "desc": ""
         }
       ]
