@@ -1,0 +1,49 @@
+{
+  "id": "mengdie101.app.sub",
+  "name": "自用应用订阅CES",
+  "author": "@mengdie101",
+  "icon": "https://raw.githubusercontent.com/mengdie101/Myactions/master/icon/IMG_2350.gif",
+  "repo": "https://github.com/mengdie101/Myactions",
+  "apps": [
+    {
+      "id": "sliverkiss_mxbc",
+      "name": "SF",
+      "author": "@Sliverkiss",
+      "repo": "",
+      "icons": [
+        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png",
+        "https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/mxbc.png"
+      ],
+      "keys": [
+        "chavy_login_sfexpress",
+        "sfsyBee",
+        "fmz200_sf_bee"
+      ],
+      "settings": [
+        {
+          "id": "chavy_login_sfexpress",
+          "name": "会员Cookie数据",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "desc": "会员Cookie数据"
+        },
+                {
+          "id": "sfsyBee",
+          "name": "会员Cookie数据",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "desc": "会员Cookie数据"
+        },        {
+          "id": "fmz200_sf_bee",
+          "name": "会员Cookie数据",
+          "val": "",
+          "type": "textarea",
+          "autoGrow": true,
+          "desc": "会员Cookie数据"
+        }
+      ]
+    }
+  ]
+}
