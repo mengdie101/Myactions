@@ -2,4 +2,4 @@
 hostname = youhui.95516.com
 
 [rewrite_local]
-^https:\/\/youhui\.95516\.com\/newsign\/api url script-request-header ysf.js
+^https:\/\/youhui\.95516\.com\/newsign\/api\/getPointClaimed url script-request-header ysf.js
