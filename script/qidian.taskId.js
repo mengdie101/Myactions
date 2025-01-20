@@ -25,7 +25,7 @@ if (a && b) {
     $.log(`🎉任务taskId无需更新!`);
     $.log(`当前taskId: ${a}`);
     $.log(`当前taskId_2: ${b}`);
-    $.msg($.name, `🎉任务taskId无需更新!`);
+   // $.msg($.name, `🎉任务taskId无需更新!`);
   } else {
     // 更新taskId
     $.setdata(a, "qd_taskId");
