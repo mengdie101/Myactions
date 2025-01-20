@@ -15,20 +15,33 @@ var obj = JSON.parse($response.body);
 var a = obj.Data.DailyBenefitModule.TaskList[0].TaskId;
 var b = obj.Data.VideoRewardTab.TaskList[0].TaskId;
 
+// 读取已存储的taskId
+var storedA = $.getdata("qd_taskId");
+var storedB = $.getdata("qd_taskId_2");
+
 if (a && b) {
-  $.setdata(a, "qd_taskId");
-  $.setdata(b, "qd_taskId_2");
-  $.log(`🎉任务taskId获取成功!`);
-  $.log(`taskId: ${a}`);
-  $.log(`taskId_2: ${b}`);
-  $.msg($.name, `🎉任务taskId获取成功!`);
-  $.done();
+  // 判断是否需要更新
+  if (a === storedA && b === storedB) {
+    $.log(`🎉任务taskId无需更新!`);
+    $.log(`当前taskId: ${a}`);
+    $.log(`当前taskId_2: ${b}`);
+    $.msg($.name, `🎉任务taskId无需更新!`);
+  } else {
+    // 更新taskId
+    $.setdata(a, "qd_taskId");
+    $.setdata(b, "qd_taskId_2");
+    $.log(`🎉任务taskId更新成功!`);
+    $.log(`新taskId: ${a}`);
+    $.log(`新taskId_2: ${b}`);
+    $.msg($.name, `🎉任务taskId更新成功!`);
+  }
 } else {
   $.log("🔴任务taskId获取失败!");
   $.log($response.body);
   $.msg($.name, "🔴任务taskId获取失败!");
-  $.done();
 }
+$.done();
+
 
 function Env(t, s) {
   class e {
