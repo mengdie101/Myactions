@@ -13,7 +13,7 @@
 #############################################
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, gw.alicdn.com, img.alicdn.com, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, open.e.kuaishou.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn,  lban.spdb.com.cn, haojia-api.smzdm.com, app-api.smzdm.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, ccmsupport-sz.tenpay.com, mp.weixin.qq.com, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, client.app.coc.10086.cn, m.client.10010.com, app-izz.zhengzhou.gov.cn
+hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, gw.alicdn.com, img.alicdn.com, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, open.e.kuaishou.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn,  lban.spdb.com.cn, app-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, s3.zdmimg.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, ccmsupport-sz.tenpay.com, mp.weixin.qq.com, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, client.app.coc.10086.cn, m.client.10010.com, app-izz.zhengzhou.gov.cn
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -155,10 +155,11 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 # > 什么值得买
-# hostname = haojia-api.smzdm.com, app-api.smzdm.com
-^https:\/\/app-api\.smzdm\.com\/util\/loading url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
-^https:\/\/app-api\.smzdm\.com\/util\/update url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
-^https:\/\/haojia-api\.smzdm\.com\/home\/list url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
+# hostname = app-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, s3.zdmimg.com
+^https:\/\/app-api.smzdm.com\/util\/loading url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
+^https:\/\/app-api.smzdm.com\/util\/update url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
+^https:\/\/haojia-api.smzdm.com\/home\/list url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
+^https:\/\/(haojia.m.smzdm.com\/detail_modul\/(other_modul|wiki_related_modul)|s3.zdmimg.com\/third\/index|app-api.smzdm.com\/util\/loading) url reject-dict
 
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
