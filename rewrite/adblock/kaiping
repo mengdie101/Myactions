@@ -167,7 +167,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
 ^https?:\/\/acs.m.taobao.com/gw/mtop.alibaba.aicloud.splash.requestsplashdata url reject-200
 ^https?:\/\/img.alicdn.com\/imgextra\/i..* -url reject-200
-^https?:\/\/ossgw.alicdn.com\/creatives-assets\/image\/ url reject-200
+^https?:\/\/ossgw.alicdn.com\/creatives-assets\/(image|prod)\/ url reject-200
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.(jpg|png)_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q\d0\.(jpg|png)_\.(heic|webp)$ url reject
 
 
