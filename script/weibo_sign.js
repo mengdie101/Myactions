@@ -257,7 +257,7 @@ function getcash() {
                 Cookie: cookie
             }
         }
-        $.get(opt, async(error, resp, data) => {
+        $.post(opt, async(error, resp, data) => {
             let result = JSON.parse(data)
             if (result.apiCode == 10000) {
                 signcash = `红包：${result.data.header[0].value}元  `
@@ -293,7 +293,7 @@ function myJifen() {
                 "X-Requested-With": "XMLHttpRequest"
             }
         }
-        $.get(opt, (error, resp, data) => {
+        $.post(opt, (error, resp, data) => {
             let result = JSON.parse(data)
             if (result.code === "100000") {
                 myScore = `积分：${result.data.score}  `
