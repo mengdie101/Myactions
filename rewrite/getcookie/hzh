@@ -1,5 +1,5 @@
 [MitM]
-hostname = hweb-mbf.huazhu.com
+hostname = hweb-personalcenter.huazhu.com
 
 [rewrite_local]
-https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn url script-request-header hzh.js
+^https:\/\/hweb-personalcenter\.huazhu\.com\/personalCenter\/rightAndInterest\/getBriefInfo url script-request-header hzh.js
