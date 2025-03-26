@@ -13,7 +13,7 @@
 #############################################
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, gw.alicdn.com, img.alicdn.com, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, open.e.kuaishou.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn,  lban.spdb.com.cn, app-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, s3.zdmimg.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, ccmsupport-sz.tenpay.com, mp.weixin.qq.com, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, client.app.coc.10086.cn, m.client.10010.com, app-izz.zhengzhou.gov.cn
+hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, gw.alicdn.com, img.alicdn.com, fuwu.nhsa.gov.cn, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, open.e.kuaishou.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn,  lban.spdb.com.cn, app-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, s3.zdmimg.com, app.smkzz.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, mp.weixin.qq.com, ccmsupport-sz.tenpay.com, csc-service.sgcc.com.cn, slapi.oray.net, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, client.app.coc.10086.cn, m.client.10010.com, img.189.cn, mapi-app.bestpay.com.cn, app-izz.zhengzhou.gov.cn
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -84,6 +84,9 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 
 
 # >>>>>>>>>>>>>>> ✅ G ✅ <<<<<<<<<<<<<<
+# > 国家医保平台
+# hostname = fuwu.nhsa.gov.cn
+https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/cms/iep/web/cms/hmpgcfg/queryAppHmpgCfgByApp url reject
 
 
 # >>>>>>>>>>>>>>> ✅ H ✅ <<<<<<<<<<<<<<
@@ -126,6 +129,7 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture url reject
 ^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) url reject
 ^https?:\/\/apimobile\.meituan\.com\/appupdate\/mach\/checkUpdate? url reject
+^https?:\/\/apimobile\.meituan\.com\/prom\/v2\/action_monitor url reject-200
 # 美团订单详情页更多推荐
 ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends url reject
 
@@ -160,6 +164,9 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https:\/\/haojia-api.smzdm.com\/home\/list url script-response-body https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
 ^https:\/\/(haojia.m.smzdm.com\/detail_modul\/(other_modul|wiki_related_modul)|s3.zdmimg.com\/third\/index) url reject-dict
 
+# > 市民卡
+# hostname = app.smkzz.com
+^https?:\/\/app.smkzz.com:8012\/citizen-card-gateway\/app\/adv\/list url reject-200
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 # > 天猫精灵|淘宝
@@ -171,12 +178,6 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 ^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.(jpg|png)_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q\d0\.(jpg|png)_\.(heic|webp)$ url reject
 
 
-# > 腾讯乘车码微信小程序
-# hostname = ccmsupport-sz.tenpay.com
-# 感谢【jinlvei】分享
-^https?:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi url reject
-
-
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
 
 
@@ -185,15 +186,24 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 
 # >>>>>>>>>>>>>>> ✅ W ✅ <<<<<<<<<<<<<<
 # > 微信
-# hostname = mp.weixin.qq.com
+# hostname = mp.weixin.qq.com, ccmsupport-sz.tenpay.com
 ^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|report|appmsgreport|appmsgpicreport) url reject-img
 # 公众号文章下方广告
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body advertisement response-body random_body
 # 微信公众号去除商品推广
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\?action url reject-dict
+# 微信乘车码小程序
+^https?:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi url reject
+
+# > 网上国网
+# hostname = csc-service.sgcc.com.cn
+^https:\/\/csc-service.sgcc.com.cn:28630\/emss-pfa-appset-front\/bootpageoutter url reject
 
 
 # >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
+# > 向日葵
+# hostname = slapi.oray.net
+^https:\/\/slapi\.oray\.net\/(\/adver\/frequence|client\/free-tips) url reject-200
 
 
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
@@ -228,6 +238,12 @@ hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, co
 # hostname = m.client.10010.com
 ^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) url reject-img
 ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) url reject-img
+
+# > 中国电信
+# hostname = img.189.cn, mapi-app.bestpay.com.cn
+^https?:\/\/img.189.cn\/images url reject
+# 翼支付
+^https?:\/\/mapi-app.bestpay.com.cn\/gapi\/appClient\/noEnc\/unionOpenAds url reject-dict
 
 # > 郑好办
 # hostname = app-izz.zhengzhou.gov.cn
