@@ -13,7 +13,7 @@
 #############################################
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, gw.alicdn.com, img.alicdn.com, fuwu.nhsa.gov.cn, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, open.e.kuaishou.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn,  lban.spdb.com.cn, app-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, s3.zdmimg.com, app.smkzz.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, mp.weixin.qq.com, ccmsupport-sz.tenpay.com, csc-service.sgcc.com.cn, slapi.oray.net, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, mbs.boc.cn, client.app.coc.10086.cn, m.client.10010.com, img.189.cn, mapi-app.bestpay.com.cn, app-izz.zhengzhou.gov.cn
+hostname = gab.122.gov.cn, ad.12306.cn, www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, gw.alicdn.com, img.alicdn.com, fuwu.nhsa.gov.cn, appapi.huazhu.com, yunbusiness.ccb.com, router-app-api.jdcloud.com, api-access.pangolin-sdk-toutiao.com, open.e.kuaishou.com, mi.gdt.qq.com, img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com, creditcardapp.bankcomm.cn,  lban.spdb.com.cn, app-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, s3.zdmimg.com, app.smkzz.com, admc.m.taobao.com, acs.m.taobao.com, ossgw.alicdn.com, heic.alicdn.com, mp.weixin.qq.com, ccmsupport-sz.tenpay.com, csc-service.sgcc.com.cn, slapi.oray.net, webappcfg.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, client.app.coc.10086.cn, m.client.10010.com, img.189.cn, mapi-app.bestpay.com.cn, app-izz.zhengzhou.gov.cn
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -225,7 +225,7 @@ https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/cms/iep/web/cms/hmpgcfg/queryAppHmpg
 
 # > 中国银行
 # hostname = mbs.boc.cn
-^https?:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-200
+# ^https?:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg url reject-200
 
 # > 中国移动
 # hostname = client.app.coc.10086.cn
