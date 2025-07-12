@@ -123,7 +123,7 @@ https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/cms/iep/web/cms/hmpgcfg/queryAppHmpg
 ^https?:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
 ^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg url reject-200
 ^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp url reject-200
-^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002 url reject-img
+^https?:\/\/s3plus\.meituan\.net\/v\d\/mss_\w+\/goku\/(lottie|lucency) url reject-img
 ^https?:\/\/www\.meituan\.com\/api\/v\d\/appstatus\? url reject
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo\? url reject
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture url reject
