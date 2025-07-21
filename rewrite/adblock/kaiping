@@ -120,7 +120,7 @@ https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/cms/iep/web/cms/hmpgcfg/queryAppHmpg
 # >>>>>>>>>>>>>>> ✅ M ✅ <<<<<<<<<<<<<<
 # > 美团
 # hostname = img.meituan.net, p*.meituan.net, s3plus.meituan.net, www.meituan.net, flowplus.meituan.net, wmapi.meituan.net, apimobile.meituan.com
-^https?:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
+^https?:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp) url reject-200
 ^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg url reject-200
 ^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp url reject-200
 ^https?:\/\/s3plus\.meituan\.net\/v\d\/mss_\w+\/goku\/(lottie|lucency) url reject-img
