@@ -1,0 +1,20 @@
+#!name = 📺 BiliBili: 🛡️ ADBlock
+#!desc = 哔哩哔哩：去广告\n自定义去除APP内界面元素
+#!openUrl = http://boxjs.com/#/app/BiliBili.ADBlock
+#!author = ClydeTime[https://github.com/ClydeTime],VirgilClyne[https://github.com/VirgilClyne],app2smile[https://github.com/app2smile],RuCu6[https://github.com/RuCu6],Maasea[https://github.com/Maasea]
+#!homepage = https://ADBlock.BiliUniverse.io
+#!icon = https://github.com/BiliUniverse/ADBlock/raw/main/src/assets/icon_rounded.png
+#!category = 🪐 BiliUniverse
+#!date = 2025-04-28 09:40:25
+#!version = 0.6.19
+
+#[rewrite_local]
+
+# 📺 BiliBili.ADBlock.response.json
+#^https?:\/\/app\.bili(bili\.com|api\.net)\/x\/v2\/(splash\/(brand\/list|event\/list2|list|show)|feed\/index(\/story)?|search\/square) url script-response-body https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js
+# 📺 BiliBili.ADBlock.response.grpc
+#^https?:\/\/(grpc|app)\.bili(bili\.com|api\.net)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo|RelatesFeed)$ url script-response-body https://github.com/BiliUniverse/ADBlock/releases/download/v0.6.19/response.bundle.js
+
+#[mitm]
+hostname = app.bilibili.com, grpc.biliapi.net
+
