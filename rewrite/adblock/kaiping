@@ -171,7 +171,7 @@ https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/cms/iep/web/cms/hmpgcfg/queryAppHmpg
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 # > 天猫精灵|淘宝
 # hostname = admc.m.taobao.com, acs.m.taobao.com, img.alicdn.com, ossgw.alicdn.com, heic.alicdn.com, gw.alicdn.com
-^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
+^https?:\/\/.+\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
 ^https?:\/\/acs.m.taobao.com/gw/mtop.alibaba.aicloud.splash.requestsplashdata url reject-200
 ^https?:\/\/img.alicdn.com\/imgextra\/i..* -url reject-200
 ^https?:\/\/ossgw.alicdn.com\/creatives-assets\/(image|prod)\/ url reject-200
