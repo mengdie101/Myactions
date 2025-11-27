@@ -1,7 +1,7 @@
 #[rewrite_local]
 #获取微博Cookie
-^https:\/\/api\.weibo\.cn\/\d\/users\/show url script-request-header https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js
-^https:\/\/api\.weibo\.cn\/2\/logservice\/attach url script-request-header https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js
+^https:\/\/api.weibo.cn\/\d\/users\/show url script-request-header weibo_sign.js
+^https:\/\/m.weibo.cn\/c\/checkin\/ug\/v2\/signin\/signin url script-request-header weibo_sign.js
 
 #[MITM]
-hostname = api.weibo.cn
+hostname = api.weibo.cn, m.weibo.cn
