@@ -1,5 +1,5 @@
 [MITM]
-hostname = my.m.jd.com
+hostname = api.m.jd.com
 
 [rewrite_local]
-^https:\/\/my\.m\.jd\.com\/api\?functionId=GetJDUserInfoUnion url script-request-header JD_extra_cookie.js
+^https:\/\/api\.m\.jd\.com\/api\?functionId=GetJDUserInfoUnion url script-request-header JD_extra_cookie.js
