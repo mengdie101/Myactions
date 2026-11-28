@@ -177,7 +177,7 @@ https://fuwu.nhsa.gov.cn/ebus/fuwu/api/base/cms/iep/web/cms/hmpgcfg/queryAppHmpg
 ^https?:\/\/img.alicdn.com\/imgextra\/i..* -url reject-200
 ^https?:\/\/ossgw.alicdn.com\/creatives-assets\/(image|prod)\/ url reject-200
 ;^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.(jpg|png)_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q\d0\.(jpg|png)_\.(heic|webp)$ url reject
-;^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.(jpg|png)_(1\d{3}|9\d{2})x(1\d{3}|9\d{2}|0)q\d0\.(jpg|png)_\.(heic|webp)$ url reject
+^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.(jpg|png)_(1\d{3}|9\d{2})x(1\d{3}|9\d{2}|0)q\d0\.(jpg|png)_\.(heic|webp)$ url reject
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
 
